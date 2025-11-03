@@ -1,0 +1,28 @@
+# --- Manipulación y análisis de datos ---
+numpy
+pandas
+scikit-learn
+
+# --- Visualización ---
+matplotlib
+seaborn
+plotly
+
+# --- Deep Learning (elige según framework preferido) ---
+tensorflow
+
+# --- Procesamiento de texto / NLP ---
+nltk
+spacy
+
+# --- Utilidades ---
+tqdm
+ipython
+jupyter
+notebook
+
+# --- Para dashboards / apps ---
+streamlit
+
+# --- (Opcional) Para experimentos y seguimiento ---
+mlflow
