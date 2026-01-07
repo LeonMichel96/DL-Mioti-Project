@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Full Judge app, already in Docker"
+git branch -M main
+git remote add origin https://github.com/LeonMichel96/DL-Mioti-Project.git
+git push -u origin main

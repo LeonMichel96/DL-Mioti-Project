@@ -1,0 +1,31 @@
+services:
+  judge-app:
+    # Build from the current directory
+    build: .
+    
+    # Tag the resulting image so it's easy to find via CLI
+    image: judges-familiar:latest
+    
+    # Name the running instance
+    container_name: judges_familiar
+    
+    # Restart policy: Keeps the judge running unless you explicitly stop it
+    restart: unless-stopped
+    
+    # --- NETWORKING ---
+    # Map localhost:7860 -> container:7860
+    ports:
+      - "7860:7860"
+    
+    # --- SECRETS ---
+    # Inject API keys at runtime (keeps them out of the image)
+    env_file:
+      - .env
+    
+    # --- PERSISTENCE ---
+    # Mount local ./data to /app/data
+    # 1. Preserves your vector store between restarts
+    # 2. Avoids rebuilding the index if it already exists
+    volumes:
+      - ./data:/app/data
+

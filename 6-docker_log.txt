@@ -1,0 +1,104 @@
+# docker-compose up --build
+
+#NOTE: Run on http://localhost:7860
+
+
+[+] Building 92.6s (14/14) FINISHED                                                                                      
+ => [internal] load local bake definitions                                                                          0.0s
+ => => reading from stdin 651B                                                                                      0.0s
+ => [internal] load build definition from Dockerfile                                                                0.0s
+ => => transferring dockerfile: 942B                                                                                0.0s
+ => [internal] load metadata for docker.io/library/python:3.11-slim                                                 1.2s
+ => [auth] library/python:pull token for registry-1.docker.io                                                       0.0s
+ => [internal] load .dockerignore                                                                                   0.0s
+ => => transferring context: 564B                                                                                   0.0s
+ => [1/6] FROM docker.io/library/python:3.11-slim@sha256:1dd3dca85e22886e44fcad1bb7ccab6691dfa83db52214cf9e20696e0  0.0s
+ => => resolve docker.io/library/python:3.11-slim@sha256:1dd3dca85e22886e44fcad1bb7ccab6691dfa83db52214cf9e20696e0  0.0s
+ => [internal] load build context                                                                                   0.0s
+ => => transferring context: 158.31kB                                                                               0.0s
+ => CACHED [2/6] WORKDIR /app                                                                                       0.0s
+ => [3/6] RUN apt-get update &&     apt-get install -y ffmpeg &&     rm -rf /var/lib/apt/lists/*                   37.2s
+ => [4/6] COPY requirements.txt .                                                                                   0.1s 
+ => [5/6] RUN pip install --no-cache-dir --upgrade pip &&     pip install --no-cache-dir -r requirements.txt       28.5s 
+ => [6/6] COPY . .                                                                                                  0.1s 
+ => exporting to image                                                                                             25.2s 
+ => => exporting layers                                                                                            19.3s 
+ => => exporting manifest sha256:11c165a58c0d249447e57fec90daee4d60c10758a555acfef0dec7321319b8ae                   0.0s 
+ => => exporting config sha256:a6a48f1d28609296a6363130c0c84911ef55cdeca9bb2896a125982edc6abcc5                     0.0s 
+ => => exporting attestation manifest sha256:52eb2b6c82e0e635ed3ee0421f321d0b3f6d50a2e6d712ddffc7257f0d3cfa28       0.0s 
+ => => exporting manifest list sha256:82dea10ac6904b11b665749ec167ab2a747ff9639f73d7210d05f5a2775e7619              0.0s
+ => => naming to docker.io/library/judges-familiar:latest                                                           0.0s
+ => => unpacking to docker.io/library/judges-familiar:latest                                                        5.9s
+ => resolving provenance for metadata file                                                                          0.0s
+[+] Running 3/3
+ ✔ judges-familiar:latest              Built                                                                        0.0s 
+ ✔ Network 6-docker_container_default  Created                                                                      0.0s 
+ ✔ Container judges_familiar           Created                                                                      0.9s 
+Attaching to judges_familiar
+judges_familiar  | Awakening the Owl...
+judges_familiar  | [LOG] Building Rules Index...
+judges_familiar  | [LOG] Starting Rules Parsing...
+judges_familiar  | [LOG] Processing 2217 lines of glossary...
+judges_familiar  | 
+judges_familiar  | ==================================================
+judges_familiar  | DATASET STATISTICS (RULES)
+judges_familiar  |    Total Nodes:      3834
+judges_familiar  |    Rules Parsed:     3109
+judges_familiar  | ==================================================
+judges_familiar  | 
+judges_familiar  | 
+judges_familiar  | [SAMPLE RULE] {
+judges_familiar  |   "rule_id": "702.19a",
+judges_familiar  |   "chapter_id": "7",
+judges_familiar  |   "chapter_title": "Additional Rules",
+judges_familiar  |   "section_id": "702",
+judges_familiar  |   "section_title": "Keyword Abilities",
+judges_familiar  |   "text": "Trample is a static ability that modifies the rules for assigning an attacking creature\u2019s combat damage. The ability has no effect when a creature with trample is blocking or is dealing noncombat damage. (See rule 510, \u201cCombat Damage Step.\u201d)"
+judges_familiar  | }
+judges_familiar  | 
+judges_familiar  | [SAMPLE GLOSSARY] {
+judges_familiar  |   "rule_id": "Escape",
+judges_familiar  |   "chapter_id": "G",
+judges_familiar  |   "chapter_title": "Glossary",
+judges_familiar  |   "section_id": null,
+judges_familiar  |   "section_title": null,
+judges_familiar  |   "text": "A keyword ability that lets a player cast a card from their graveyard. See rule 702.138, \u201cEscape.\u201d"
+judges_familiar  | }
+Parsing nodes: 100%|██████████| 3834/3834 [00:00<00:00, 8863.38it/s]
+Generating embeddings: 100%|██████████| 2048/2048 [00:18<00:00, 112.85it/s]
+Generating embeddings: 100%|██████████| 1786/1786 [00:14<00:00, 127.33it/s]
+judges_familiar  | [LOG] Building Cards Index...
+judges_familiar  | [LOG] Downloading AtomicCards.json...
+judges_familiar  | [LOG] Processing Cards JSON...
+100%|██████████| 33071/33071 [00:00<00:00, 41899.57card/s]
+judges_familiar  | 
+judges_familiar  | ==================================================
+judges_familiar  | DATASET STATISTICS (CARDS)
+judges_familiar  |    Cards Indexed:    30225
+judges_familiar  |    Format Skipped:   2846 (Not Legal)
+judges_familiar  | ==================================================
+judges_familiar  | 
+judges_familiar  | 
+judges_familiar  | [SAMPLE CARD] {
+judges_familiar  |   "card_name": "Nezumi Ronin",
+judges_familiar  |   "text": "Card Name: Nezumi Ronin\nFormat Legality: Modern: Legal, Legacy: Legal, Vintage: Legal, Commander: Legal, Pauper: Legal\nCost: {2}{B}\nType: Creature — Rat Samurai\nStats: 3/1\nOracle Text:\nBushido 1 (Whenever this creature blocks or becomes blocked, it gets +1/+1 until end of turn.)\n"
+judges_familiar  | }
+judges_familiar  | 
+Parsing nodes: 100%|██████████| 30225/30225 [00:04<00:00, 6422.07it/s]
+Generating embeddings: 100%|██████████| 2048/2048 [00:24<00:00, 83.89it/s] 
+Generating embeddings: 100%|██████████| 2048/2048 [00:20<00:00, 99.87it/s] 
+Generating embeddings: 100%|██████████| 2048/2048 [00:18<00:00, 112.55it/s]
+Generating embeddings: 100%|██████████| 2048/2048 [00:22<00:00, 92.09it/s] 
+Generating embeddings: 100%|██████████| 2048/2048 [00:19<00:00, 102.44it/s]
+Generating embeddings: 100%|██████████| 2048/2048 [00:21<00:00, 94.19it/s] 
+Generating embeddings: 100%|██████████| 2048/2048 [00:20<00:00, 101.61it/s]
+Generating embeddings: 100%|██████████| 2048/2048 [00:26<00:00, 76.13it/s] 
+Generating embeddings: 100%|██████████| 2048/2048 [00:20<00:00, 100.55it/s]
+Generating embeddings: 100%|██████████| 2048/2048 [00:19<00:00, 106.31it/s]
+Generating embeddings: 100%|██████████| 2048/2048 [00:16<00:00, 121.81it/s]
+Generating embeddings: 100%|██████████| 2048/2048 [00:21<00:00, 95.77it/s] 
+Generating embeddings: 100%|██████████| 2048/2048 [00:27<00:00, 74.10it/s]
+Generating embeddings: 100%|██████████| 2048/2048 [00:26<00:00, 76.12it/s]
+Generating embeddings: 100%|██████████| 1553/1553 [00:17<00:00, 89.38it/s] 
+judges_familiar  | * Running on local URL:  http://0.0.0.0:7860
+judges_familiar  | * To create a public link, set `share=True` in `launch()`.

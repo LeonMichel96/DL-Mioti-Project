@@ -1,0 +1,15 @@
+# --- GLOBAL SECURITY SHIELD ---
+# Ignore .env files in THIS folder and ALL subfolders recursively
+.env
+.env.*
+
+# --- GLOBAL DATA SHIELD ---
+# Ignore data/ folders in ALL subfolders recursively
+data/
+
+# --- MAC & PYTHON JUNK ---
+.DS_Store
+__pycache__/
+*.pyc
+.gradio/
+.ipynb_checkpoints/

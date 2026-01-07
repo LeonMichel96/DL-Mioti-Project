@@ -1,0 +1,8 @@
+pyenv install 3.11.9
+pyenv virtualenv 3.11.9 pf_311
+pyenv activate pf_311
+
+pip install --upgrade pip setuptools wheel cython
+pip install -r requirements.txt
+python -m ipykernel install --user --name pf_311 --display-name "Python (pf 3.11)"
+pyenv deactivate

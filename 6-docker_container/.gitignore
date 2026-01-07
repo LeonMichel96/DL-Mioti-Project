@@ -1,0 +1,28 @@
+# --- SECURITY (CRITICAL) ---
+# Never commit API keys
+.env
+.env.*
+
+# --- HEAVY DATA & INDICES ---
+# The app generates these or downloads them. 
+# We do not want vector stores (GBs in size) in Git.
+data/
+
+# --- PYTHON ARTIFACTS ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+pip-log.txt
+
+# --- VIRTUAL ENVIRONMENTS ---
+venv/
+.venv/
+env/
+
+# --- OS & IDE SETTINGS ---
+.DS_Store
+.vscode/
+.idea/
+

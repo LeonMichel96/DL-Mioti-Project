@@ -1,0 +1,18 @@
+# Core Utilities
+python-dotenv
+requests
+tqdm
+
+# OpenAI
+openai
+
+# LlamaIndex Ecosystem
+llama-index
+llama-index-core
+llama-index-llms-openai
+llama-index-embeddings-openai
+
+# User Interface
+gradio
+
+ipykernel
