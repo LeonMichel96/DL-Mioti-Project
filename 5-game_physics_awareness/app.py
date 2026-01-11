@@ -131,4 +131,4 @@ with gr.Blocks(title="Judge's Familiar") as app:
     send_btn.click(fn=add_user_message, inputs=[msg_box, chatbot], outputs=[msg_box, chatbot]).then(fn=bot_response, inputs=chatbot, outputs=chatbot)
 
 if __name__ == "__main__":
-    app.launch(share=True, theme=theme, css=custom_css)
+    app.launch(share=False, theme=theme, css=custom_css)

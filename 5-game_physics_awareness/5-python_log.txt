@@ -1,0 +1,71 @@
+# python app.py
+
+
+Awakening the Owl...
+[LOG] Building Rules Index...
+[LOG] Starting Rules Parsing...
+[LOG] Processing 2217 lines of glossary...
+
+==================================================
+DATASET STATISTICS (RULES)
+   Total Nodes:      3834
+   Rules Parsed:     3109
+   Glossary Terms:   725
+==================================================
+
+
+[SAMPLE RULE] {
+  "rule_id": "702.84a",
+  "chapter_id": "7",
+  "chapter_title": "Additional Rules",
+  "section_id": "702",
+  "section_title": "Keyword Abilities",
+  "text": "Unearth is an activated ability that functions while the card with unearth is in a graveyard. \u201cUnearth [cost]\u201d means \u201c[Cost]: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step. If it would leave the battlefield, exile it instead of putting it anywhere else. Activate only as a sorcery.\u201d"
+}
+
+[SAMPLE GLOSSARY] {
+  "rule_id": "Exhaust",
+  "chapter_id": "G",
+  "chapter_title": "Glossary",
+  "section_id": null,
+  "section_title": null,
+  "text": "A special kind of activated ability that may be activated only once. See rule 702.177, \u201cExhaust.\u201d"
+}
+Parsing nodes: 100%|██████████████████████████████████████████| 3834/3834 [00:00<00:00, 7662.42it/s]
+Generating embeddings: 100%|███████████████████████████████████| 2048/2048 [00:18<00:00, 111.54it/s]
+Generating embeddings: 100%|███████████████████████████████████| 1786/1786 [00:14<00:00, 122.42it/s]
+[LOG] Building Cards Index...
+[LOG] Downloading AtomicCards.json...
+[LOG] Processing Cards JSON...
+100%|████████████████████████████████████████████████████| 33071/33071 [00:00<00:00, 70074.90card/s]
+
+==================================================
+DATASET STATISTICS (CARDS)
+   Cards Indexed:    30225
+   Format Skipped:   2846 (Not Legal)
+==================================================
+
+
+[SAMPLE CARD] {
+  "card_name": "Spreading Seas",
+  "text": "Card Name: Spreading Seas\nFormat Legality: Modern: Legal, Legacy: Legal, Vintage: Legal, Commander: Legal, Pauper: Legal\nCost: {1}{U}\nType: Enchantment — Aura\nOracle Text:\nEnchant land\nWhen this Aura enters, draw a card.\nEnchanted land is an Island.\n\nOfficial Rulings:\n- The enchanted land loses its existing land types and any abilities printed on it. It now has the land type Island and has the ability to tap to produce {U}. Spreading Seas doesn't change the enchanted land's name or whether it's legendary, basic, or snow.\n"
+}
+
+Parsing nodes: 100%|████████████████████████████████████████| 30225/30225 [00:05<00:00, 5871.13it/s]
+Generating embeddings: 100%|███████████████████████████████████| 2048/2048 [00:17<00:00, 119.97it/s]
+Generating embeddings: 100%|███████████████████████████████████| 2048/2048 [00:18<00:00, 111.30it/s]
+Generating embeddings: 100%|███████████████████████████████████| 2048/2048 [00:16<00:00, 121.53it/s]
+Generating embeddings: 100%|███████████████████████████████████| 2048/2048 [00:19<00:00, 106.22it/s]
+Generating embeddings: 100%|████████████████████████████████████| 2048/2048 [00:22<00:00, 91.83it/s]
+Generating embeddings: 100%|████████████████████████████████████| 2048/2048 [00:20<00:00, 99.96it/s]
+Generating embeddings: 100%|███████████████████████████████████| 2048/2048 [00:17<00:00, 115.47it/s]
+Generating embeddings: 100%|███████████████████████████████████| 2048/2048 [00:19<00:00, 106.38it/s]
+Generating embeddings: 100%|████████████████████████████████████| 2048/2048 [00:26<00:00, 76.32it/s]
+Generating embeddings: 100%|████████████████████████████████████| 2048/2048 [00:24<00:00, 82.26it/s]
+Generating embeddings: 100%|████████████████████████████████████| 2048/2048 [00:25<00:00, 80.13it/s]
+Generating embeddings: 100%|████████████████████████████████████| 2048/2048 [00:22<00:00, 91.08it/s]
+Generating embeddings: 100%|████████████████████████████████████| 2048/2048 [00:28<00:00, 72.97it/s]
+Generating embeddings: 100%|████████████████████████████████████| 2048/2048 [00:26<00:00, 77.49it/s]
+Generating embeddings: 100%|████████████████████████████████████| 1553/1553 [00:18<00:00, 84.13it/s]
+* Running on local URL:  http://127.0.0.1:7860
+* To create a public link, set `share=True` in `launch()`.

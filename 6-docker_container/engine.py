@@ -148,6 +148,7 @@ def parse_rules_logic(txt_path: Path) -> List[Dict[str, Any]]:
     print("DATASET STATISTICS (RULES)")
     print(f"   Total Nodes:      {len(nodes)}")
     print(f"   Rules Parsed:     {rules_parsed_count}")
+    print(f"   Glossary Terms:   {len(nodes) - rules_parsed_count}")
     print("="*50 + "\n")
     return nodes
 
