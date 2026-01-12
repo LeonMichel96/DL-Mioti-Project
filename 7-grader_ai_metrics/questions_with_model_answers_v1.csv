@@ -1,0 +1,1747 @@
+id,difficulty,category,question,ground_truth,block,theme,model_answer
+1,Easy,Keywords,"If I attack with a creature with [[Lifelink]] and my opponent blocks with a 1/1, do I still gain life equal to my creature's power?","Yes. Lifelink causes you to gain life equal to the damage dealt. Even if the blocker has only 1 toughness, your creature deals damage equal to its full power during the combat damage step.",1,Combat & Basic Keywords,"Ah, the intricacies of combat and lifelink! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+You are attacking with a creature enchanted by **Lifelink**, and your opponent blocks with a 1/1 creature. The key elements here are the lifelink ability and the combat damage assignment.
+
+### 2. The Logic (Step-by-Step)
+- **Combat Damage Assignment**: When your creature with lifelink attacks and is blocked, it will assign its combat damage to the blocking creature. According to Rule 510.1a, the attacking creature assigns damage equal to its power to the blocking creature.
+- **Damage Resolution**: If your creature has a power greater than 1, it will deal damage to the 1/1 blocker. For instance, if your creature is a 3/3, it will assign 3 damage to the 1/1 blocker, which is more than enough to destroy it.
+- **Lifelink Activation**: The lifelink ability states that damage dealt by a source with lifelink causes its controller to gain that much life (Rule 702.15b). Therefore, regardless of how much damage is assigned to the blocking creature, you will gain life equal to the damage dealt by your creature.
+- **Example Calculation**: If your creature is a 3/3 and it deals 3 damage to the 1/1 blocker, you will gain 3 life. If your creature is a 1/1 and it deals 1 damage to the 1/1 blocker, you will gain 1 life. 
+
+Crucially, the lifelink ability is triggered by the damage dealt, not by the outcome of that damage (i.e., whether the blocking creature survives or not).
+
+### 3. The Ruling
+Yes, you will gain life equal to your creature's power, as the lifelink ability activates based on the damage dealt, regardless of the blocking creature's toughness.
+
+### Sources
+[[Lifelink]], [Rule 702.15b (Lifelink)]  
+[[Combat Damage]], [Rule 510.1a (Combat Damage Assignment)]"
+2,Easy,Keywords,Can a creature with [[Flying]] be blocked by a creature with [[Reach]]?,Yes. Reach is a keyword specifically designed to allow creatures to block attackers with Flying as if the blocker also had Flying.,1,Combat & Basic Keywords,"Ah, the intricacies of combat mechanics! Let us delve into the relationship between flying and reach.
+
+### 1. The Interaction
+We are examining the interaction between a creature with flying and a creature with reach. The key terms here are ""flying,"" which allows a creature to evade most blockers, and ""reach,"" which enables a creature to block those elusive flying creatures.
+
+### 2. The Logic (Step-by-Step)
+- **Flying Mechanics**: According to Rule 702.9b, a creature with flying can only be blocked by creatures that also have flying or reach. This is a fundamental aspect of how flying operates in the game.
+- **Reach Mechanics**: The reach ability, as defined in Rule 702.17, allows a creature to block flying creatures. Thus, a creature with reach is specifically designed to counter the advantage of flying.
+- **Blocking Scenario**: When a creature with flying attacks, the defending player may declare a creature with reach as a blocker. This is permissible because the reach ability allows it to interact with flying creatures effectively.
+
+### 3. The Ruling
+Yes, a creature with flying can indeed be blocked by a creature with reach.
+
+### Sources
+[[Flying]], [Rule 702.9b (Flying)]; [[Reach]], [Rule 702.17 (Reach)]."
+3,Easy,Keywords,"If my creature has [[Vigilance]], does it still tap to activate an ability with the {T} symbol after it has attacked?","Yes. Vigilance means the creature does not tap to attack. Since it remains untapped after the declare attackers step, it is available to be tapped for other abilities later.",1,Combat & Basic Keywords,"Ah, the nuances of vigilance and tapping mechanics! Let us delve into the intricacies of this interaction.
+
+### 1. The Interaction
+The key card in question is **Vigilance**, an enchantment that grants the enchanted creature the ability to attack without tapping. The query revolves around whether a creature with vigilance can still tap to activate an ability that requires the {T} symbol after it has attacked.
+
+### 2. The Logic (Step-by-Step)
+- **Vigilance Effect**: When a creature is enchanted with Vigilance, it does not tap when it attacks. This means that during the Declare Attackers step, the creature remains untapped despite being declared as an attacker.
+- **Activated Abilities**: According to Rule 602.5a, a creature's activated ability that includes the tap symbol ({T}) can be activated unless it has been controlled by its controller continuously since the beginning of their most recent turn. However, vigilance does not prevent the creature from being tapped for other purposes after it has attacked.
+- **Post-Attack Tapping**: Once the creature has attacked, it remains untapped due to vigilance. Therefore, it can still be tapped to activate an ability with the {T} symbol, as long as it is not already tapped for another reason (e.g., it has not been tapped for a different ability or effect).
+
+Crucially, the ability to tap for activation is independent of the attack status. The creature can be tapped after the attack for any valid ability that requires it to do so.
+
+### 3. The Ruling
+Yes, a creature with Vigilance can still tap to activate an ability with the {T} symbol after it has attacked, provided it is not already tapped for another reason.
+
+### Sources
+[[Vigilance]], [Rule 702.20b (Vigilance)]  
+[[Vigilance]], [Rule 602.5a (Activated Abilities)]  
+[[Vigilance]], [Rule 508.1f (Declare Attackers Step)]"
+4,Easy,Keywords,Does [[Ward 2]] counter a spell if the opponent doesn't pay the {2} mana?,"Yes. Ward is a triggered ability. When the creature becomes the target of a spell or ability an opponent controls, that spell/ability is countered unless the player pays the cost.",1,Combat & Basic Keywords,"Ah, the intricacies of ward mechanics! Let us delve into the nuances of this triggered ability.
+
+### 1. The Interaction
+We are examining the ward ability, specifically the scenario where a creature with Ward {2} becomes the target of a spell or ability controlled by an opponent. 
+
+### 2. The Logic (Step-by-Step)
+- **Triggered Ability**: Ward is a triggered ability that activates whenever the permanent with ward is targeted by a spell or ability from an opponent. In this case, the ability states that the spell or ability will be countered unless the opponent pays the specified cost, which is {2} in this instance.
+  
+- **Cost Payment**: If the opponent chooses not to pay the {2} mana when the ward ability triggers, the spell or ability targeting the creature will indeed be countered. This is because the ward ability explicitly requires the payment of the cost to avoid being countered.
+
+- **Independence of Abilities**: It is crucial to note that the ward ability operates independently of the source of the spell or ability that triggered it. Thus, even if the spell is removed or the source is no longer present, the ward ability will still resolve based on the Last Known Information (LKI) of the situation.
+
+### 3. The Ruling
+If the opponent does not pay the {2} mana when a spell targets a creature with Ward {2}, that spell will be countered.
+
+### Sources
+[[Ward of Piety]], [Rule 702.21a (Ward)]  
+[[Purple Worm]], [Rule 702.21a (Ward)]  
+[[Suspicious Detonation]], [Rule 702.21a (Ward)]  
+[[Westgate Regent]], [Rule 702.21a (Ward)]  
+[[Patchwork Automaton]], [Rule 702.21a (Ward)]"
+5,Medium,Keywords,"If I attack with a creature with [[Deathtouch]] and [[Trample]], and it is blocked, how much damage do I need to assign to the blocker?","You only need to assign 1 point of damage to the blocker. Because of Deathtouch, any amount of damage is considered lethal. The rest of the damage can 'trample' over to the defending player.",1,Combat & Basic Keywords,"Ah, the intricacies of combat mechanics! Let us delve into the nuances of assigning damage when a creature with both deathtouch and trample is involved.
+
+### 1. The Interaction
+You are attacking with a creature that possesses both deathtouch and trample, and it is subsequently blocked by an opposing creature. 
+
+### 2. The Logic (Step-by-Step)
+- **Deathtouch**: This ability stipulates that any amount of damage dealt to a creature is considered lethal damage. Thus, even a single point of damage from your creature will suffice to satisfy the requirement for lethal damage.
+- **Trample**: When a creature with trample is blocked, the controller must assign enough damage to the blocking creature to meet the lethal damage threshold before assigning any excess damage to the defending player or planeswalker. 
+
+Now, since your creature has deathtouch, you need only assign **1 damage** to the blocking creature to fulfill the lethal damage requirement. After that, any remaining damage can be assigned to the defending player or planeswalker.
+
+Crucially, if your creature's power is greater than 1, you can assign the minimum lethal damage (1) to the blocker and then assign the rest of the damage to the defending player. For example, if your creature has a power of 4, you would assign 1 damage to the blocker and 3 damage to the defending player.
+
+### 3. The Ruling
+You must assign at least 1 damage to the blocking creature, and any excess damage can be assigned to the defending player or planeswalker.
+
+### Sources
+[[Deathtouch]], [Rule 702.2c]  
+[[Trample]], [Rule 702.19b]  
+[[Combat Damage Assignment]], [Rule 510.1]"
+6,Easy,Keywords,Can a creature with [[Haste]] activate an ability with a {T} symbol the turn it comes into play?,Yes. Haste removes the restriction that prevents a creature from attacking or using tap abilities until you have controlled it since the beginning of your most recent turn.,1,Combat & Basic Keywords,"Ah, the intricacies of haste and activated abilities! Let us delve into this fascinating interaction.
+
+### 1. The Interaction
+We are examining the relationship between the keyword ability Haste and the activation of abilities that require tapping a creature, denoted by the {T} symbol.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Haste**: Haste is a static ability that allows a creature to ignore the ""summoning sickness"" rule, which typically prevents a creature from attacking or activating abilities that require tapping or untapping unless it has been under its controller's control since the beginning of their most recent turn (Rule 302.6).
+- **The Role of Haste**: When a creature gains haste, it can attack and activate its {T} abilities immediately, regardless of how long it has been under its controller's control. This is explicitly stated in Rule 702.10b and Rule 702.10c.
+- **Application of the Rules**: Therefore, if a creature enters the battlefield and has haste, it can indeed activate any abilities that require tapping, even if it just came into play that turn.
+
+### 3. The Ruling
+Yes, a creature with Haste can activate an ability with a {T} symbol the turn it comes into play.
+
+### Sources
+[[Haste]], [Rule 702.10]  
+[[Activated Abilities]], [Rule 602.5a]  
+[[Summoning Sickness]], [Rule 302.6]"
+7,Medium,Turn Structure,Can I cast a creature spell during my opponent's end step if it does not have [[Flash]]?,"No. Without Flash, creatures can only be cast during your own main phases when the stack is empty.",1,Combat & Basic Keywords,"Ah, the nuances of timing and spellcasting! Let us delve into the intricacies of casting spells, particularly in relation to the concept of ""flash.""
+
+### 1. The Interaction
+The key card in question is a creature spell that does not possess the flash ability. The scenario involves casting this creature spell during your opponent's end step.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Flash**: The ability ""flash"" allows a player to cast a card at any time they could cast an instant. However, if a creature does not have flash, it cannot be cast outside of your own main phases when the stack is empty.
+- **Timing Restrictions**: According to Rule 302.1, a player may only cast a creature card from their hand during a main phase of their turn when the stack is empty. This means that you cannot cast a creature spell during your opponent's end step unless it has flash.
+- **End Step Context**: The end step is part of your opponent's turn, and unless you have a means to cast the creature as though it had flash (which it does not), you are restricted from doing so.
+
+### 3. The Ruling
+You cannot cast a creature spell during your opponent's end step if it does not have flash.
+
+### Sources
+[[Flash]], [Rule 702.8a (Flash)]; [[Creature Spell]], [Rule 302.1 (Casting Spells)]."
+8,Easy,Keywords,"If my creature has [[First Strike]] and my opponent's creature doesn't, and my creature's power is enough to kill theirs, does my creature take any damage?","No. Your creature deals damage in the first strike damage step. If the opponent's creature dies there, it won't be around to deal damage in the regular combat damage step.",1,Combat & Basic Keywords,"Ah, a query that delves into the intricacies of combat mechanics! Let us dissect this scenario with precision.
+
+### 1. The Interaction
+You have a creature with First Strike, while your opponent's creature lacks this ability. The power of your creature is sufficient to deal lethal damage to the opponent's creature.
+
+### 2. The Logic (Step-by-Step)
+- **First Strike Mechanics**: As per Rule 702.7, a creature with First Strike deals its combat damage before creatures without First Strike during the first combat damage step. This is crucial to understanding the sequence of events.
+- **Damage Assignment**: In this case, your creature will assign its damage first. If the damage is equal to or greater than the toughness of the opponent's creature, it will indeed destroy it.
+- **Damage to Your Creature**: However, since your opponent's creature does not have First Strike, it will not deal damage until the second combat damage step. Thus, your creature will not take any damage during the first combat damage step, as it is the only one dealing damage at that time.
+
+### 3. The Ruling
+Your creature will not take any damage in this scenario, as it deals damage first and destroys the opponent's creature before it has a chance to retaliate.
+
+### Sources
+[[First Strike]], [Rule 702.7]  
+[[Combat Damage Step]], [Rule 510.4]"
+9,Medium,Keywords,"If a creature has [[Indestructible]], does it die if its toughness is reduced to 0 by an effect like [[Toxic Deluge]]?","Yes. Indestructible only prevents destruction (from damage or 'destroy' effects). Having 0 toughness is a state-based action that puts the creature into the graveyard, which is not destruction.",1,Combat & Basic Keywords,"Ah, the intricacies of creature interactions and the nuances of indestructibility! Let us delve into this matter with the precision it deserves.
+
+### 1. The Interaction
+The key cards in this scenario are Toxic Deluge, which reduces the toughness of creatures, and the concept of indestructibility, which prevents a creature from being destroyed.
+
+### 2. The Logic (Step-by-Step)
+- **Toxic Deluge** resolves and you choose a value for X, which determines how much toughness is reduced from all creatures on the battlefield. For instance, if you choose X = 3, all creatures will receive -3/-3 until the end of turn.
+- Now, consider a creature with indestructible. According to Rule 702.12b, an indestructible permanent cannot be destroyed, regardless of the amount of damage marked on it or its toughness being reduced to 0.
+- When Toxic Deluge reduces the toughness of an indestructible creature to 0, it does not trigger the destruction state-based action because the creature is not subject to destruction due to its indestructible status. Thus, even if its toughness is effectively 0, it remains on the battlefield.
+
+Crucially, the interaction here hinges on the definition of destruction. The state-based actions that would normally destroy a creature with 0 toughness do not apply to indestructible creatures.
+
+### 3. The Ruling
+A creature with indestructible does not die if its toughness is reduced to 0 by an effect like Toxic Deluge; it remains on the battlefield.
+
+### Sources
+[[Toxic Deluge]], [Rule 704.5g (State-Based Actions)]  
+[[Indestructible]], [Rule 702.12b (Indestructible)]"
+10,Easy,Keywords,"If I have [[Double Strike]], do I get two triggers for an ability that says 'Whenever this creature deals combat damage'?","Yes. The creature deals damage in two separate steps (first strike and regular), so the ability will trigger twice, once for each time it deals damage.",1,Combat & Basic Keywords,"Ah, a query regarding the nuances of combat damage and triggered abilities! Let us delve into the mechanics at play.
+
+### 1. The Interaction
+You are inquiring about the interaction between the double strike ability and a triggered ability that activates ""whenever this creature deals combat damage."" 
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Double Strike**: Double strike allows a creature to deal damage in two separate combat damage steps: the first for creatures with double strike or first strike, and the second for all remaining creatures that do not have either ability. This is crucial because it means that any triggered ability that activates upon dealing combat damage will have the opportunity to trigger twice if the creature has double strike.
+  
+- **Triggered Abilities**: The ability you mentioned, ""Whenever this creature deals combat damage,"" is a triggered ability. According to the rules, if a creature with double strike deals combat damage, it will trigger the ability once for the first combat damage step and again for the second combat damage step. 
+
+- **Independence of Abilities**: The independence of abilities means that once the ability is placed on the stack, it will resolve based on the state of the game at that moment, regardless of any changes to the creature's status thereafter. Thus, even if the creature were to lose double strike after the first damage step, the ability would still trigger for both instances of damage dealt.
+
+### 3. The Ruling
+Yes, if you have a creature with double strike, you will receive two triggers for an ability that says ""Whenever this creature deals combat damage.""
+
+### Sources
+[[Double Strike]], [Rule 702.4]  
+[[Battle Mastery]], [Rule 702.4d]  
+[[Duelist's Heritage]], [Rule 702.4]"
+11,Medium,Stack,"I cast [[Lightning Bolt]] on my opponent's 3/3. In response, they cast a spell to give it +1/+1. Does the creature die?","No. The stack is 'Last-In, First-Out'. The +1/+1 spell resolves first, making the creature a 4/4. Then the Bolt deals 3 damage, which is no longer enough to kill it.",2,The Stack & Spell Interaction,"Ah, the intricacies of damage resolution and creature toughness! Let us delve into this interaction with precision.
+
+### 1. The Interaction
+You have cast **Lightning Bolt**, which deals 3 damage to a target, specifically your opponent's 3/3 creature. In response, your opponent has cast a spell that grants their creature +1/+1, making it a 4/4.
+
+### 2. The Logic (Step-by-Step)
+1. **Initial State**: The creature is a 3/3 with no damage marked on it.
+2. **Casting Lightning Bolt**: When you cast **Lightning Bolt**, it is placed on the stack and will deal 3 damage to the target creature upon resolution.
+3. **Opponent's Response**: Your opponent casts a spell that gives their creature +1/+1, increasing its toughness to 4. This change occurs before the **Lightning Bolt** resolves.
+4. **Resolution of Lightning Bolt**: Now, when **Lightning Bolt** resolves, it deals 3 damage to the creature. The creature is now marked with 3 damage.
+5. **State-Based Actions**: At this point, we check if the creature has been dealt lethal damage. The creature is a 4/4 with 3 damage marked on it. Since the total damage (3) is less than its toughness (4), it has not been dealt lethal damage.
+
+Crucially, observe that the damage dealt by **Lightning Bolt** does not destroy the creature because it is still alive with a toughness greater than the damage marked on it.
+
+### 3. The Ruling
+The creature does not die; it remains on the battlefield with 3 damage marked on it.
+
+### Sources
+[[Lightning Bolt]], [Rule 120.5 (Damage and State-Based Actions)]"
+12,Medium,Stack,"If I cast a spell and my opponent casts [[Counterspell]], and then I cast another [[Counterspell]] targeting theirs, does my original spell resolve?","Yes. Your Counterspell resolves first, removing the opponent's Counterspell from the stack. Then, your original spell is next on the stack and will resolve normally.",2,The Stack & Spell Interaction,"Ah, the intricacies of the stack and the art of countering spells! Let us delve into this fascinating interaction.
+
+### 1. The Interaction
+You have cast a spell, and your opponent has responded by casting **Counterspell** to counter your original spell. In turn, you cast another **Counterspell** targeting your opponent's **Counterspell**.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1**: You cast your original spell. This spell is placed on the stack, and your opponent gains priority.
+- **Step 2**: Your opponent casts **Counterspell** targeting your original spell. This **Counterspell** is now on the stack above your original spell, and it will resolve first.
+- **Step 3**: You then cast another **Counterspell** targeting your opponent's **Counterspell**. This new **Counterspell** is placed on the stack above the first **Counterspell**.
+  
+Now, we must resolve the stack in reverse order:
+- **Step 4**: The topmost spell, your **Counterspell** targeting your opponent's **Counterspell**, resolves first. It successfully counters the opponent's **Counterspell**, meaning that it is removed from the stack and has no effect.
+- **Step 5**: With the opponent's **Counterspell** no longer on the stack, we now return to the next spell down, which is your original spell. Since it was not countered, it resolves successfully.
+
+Crucially, observe that the independence of abilities on the stack allows your **Counterspell** to resolve even after the initial **Counterspell** was cast. The original spell is unaffected by the now-countered **Counterspell**.
+
+### 3. The Ruling
+Your original spell resolves successfully, as your second **Counterspell** countered the first **Counterspell** before it could affect your original spell.
+
+### Sources
+[[Counterspell]], [Rule 117.7 (Priority and Stacking)]  
+[[Counterspell]], [Rule 608.2m (Resolving Spells)]  
+[[Counterspell]], [Rule 707.12 (Casting Copies of Spells)]"
+13,Hard,Axioms / Stack,I activate [[The One Ring]] to draw cards. My opponent casts [[Vandalblast]] to destroy it in response. Do I still draw the cards?,"Yes. Once an ability is on the stack, it is independent of its source (Axiom 3). The ability will resolve using Last Known Information (LKI) about the counters on the Ring.",2,The Stack & Spell Interaction,"Ah, the intricacies of the stack and the interplay of abilities! Let us dissect this interaction with precision.
+
+### 1. The Interaction
+You are activating The One Ring to draw cards, while your opponent responds by casting Vandalblast to destroy it. This scenario presents a fascinating examination of how abilities and spells interact on the stack.
+
+### 2. The Logic (Step-by-Step)
+1. **Activation of The One Ring**: When you activate The One Ring's ability, you put a burden counter on it and attempt to draw a card for each burden counter. At this moment, the ability is placed on the stack.
+   
+2. **Response with Vandalblast**: Your opponent casts Vandalblast targeting The One Ring. Since Vandalblast has an overload cost, if they choose to pay it, it will destroy all artifacts you don't control, including The One Ring, without targeting it.
+
+3. **Independence of Abilities**: Crucially, once The One Ring's ability is on the stack, it exists independently of its source. This means that even if The One Ring is destroyed by Vandalblast, the ability to draw cards will still resolve using Last Known Information (LKI). 
+
+4. **Resolution of The One Ring's Ability**: When The One Ring's ability resolves, it checks the number of burden counters on it. If it had one or more burden counters before it was destroyed, you will draw cards based on that number. The destruction of The One Ring does not affect the resolution of the ability that was already on the stack.
+
+### 3. The Ruling
+You will still draw the cards based on the number of burden counters on The One Ring, even if it is destroyed by Vandalblast.
+
+### Sources
+[[The One Ring]], [Rule 113.7a (The Stack)]  
+[[Vandalblast]], [Rule 601.2i (Casting Spells)]"
+14,Medium,Triggers,"My opponent has [[Sheoldred, the Apocalypse]]. I cast [[Brainstorm]]. When do I lose the 6 life?","You lose the life after Brainstorm finishes resolving. Each card drawn triggers Sheoldred, but those triggers wait until the current spell is completely finished before being put on the stack.",2,The Stack & Spell Interaction,"Ah, the intricate dance of card drawing and life manipulation! Let us dissect this interaction with precision.
+
+### 1. The Interaction
+You are casting **Brainstorm**, which allows you to draw three cards, while your opponent controls **Sheoldred, the Apocalypse**, whose abilities trigger whenever a card is drawn.
+
+### 2. The Logic (Step-by-Step)
+1. **Casting Brainstorm**: When you cast **Brainstorm**, it goes onto the stack. Once it resolves, you will draw three cards.
+2. **Drawing Cards**: As you draw the three cards, **Sheoldred's** triggered ability activates for each card drawn. Since you are drawing three cards, **Sheoldred** will trigger three times.
+3. **Order of Triggers**: You control the order of the triggered abilities. You can choose to resolve them in any order you prefer, but they will all resolve before any player can take further actions.
+4. **Life Loss Calculation**: Each time you draw a card, you gain 2 life from **Sheoldred**, and your opponent loses 2 life. Therefore, for the three cards drawn, your opponent will lose a total of 6 life (2 life lost per card drawn).
+5. **Resolution of Triggers**: The life loss occurs simultaneously as the triggers resolve. Thus, after you finish drawing the three cards, your opponent will lose 6 life in total.
+
+### 3. The Ruling
+You will lose 6 life immediately after resolving **Brainstorm**, as your opponent loses 2 life for each of the three cards you draw.
+
+### Sources
+[[Brainstorm]], [Rule 704.7 (State-Based Actions)]  
+[[Sheoldred, the Apocalypse]], [Rule 704.7 (State-Based Actions)]"
+15,Medium,Targets,Can I cast [[Fatal Push]] on a creature with [[Protection from Black]]?,"No. Protection prevents targeting. Since Fatal Push requires a 'target creature', a creature with protection from black is not a legal target for it.",2,The Stack & Spell Interaction,"Ah, the intricacies of protection mechanics! Let us delve into the nuances of targeting spells and abilities.
+
+### 1. The Interaction
+The key cards in question are **Fatal Push**, an instant that destroys a target creature based on its mana value, and a creature with **Protection from Black**, which prevents it from being targeted by black spells and abilities.
+
+### 2. The Logic (Step-by-Step)
+- **Protection Mechanic**: According to Rule 702.16b, a permanent with protection from a specific quality (in this case, black) cannot be targeted by spells or abilities that have that quality. This includes any black spells, such as Fatal Push.
+- **Targeting Requirement**: Fatal Push requires a target creature to resolve. If the target is a creature with protection from black, the spell cannot legally target it, and thus it cannot resolve.
+- **Conclusion**: The protection ability effectively creates a barrier against any targeting attempts from black sources, rendering Fatal Push ineffective against such a creature.
+
+### 3. The Ruling
+You cannot cast Fatal Push on a creature with Protection from Black, as it cannot be targeted by black spells.
+
+### Sources
+[[Fatal Push]], [Rule 702.16b (Protection from [quality])]"
+16,Hard,Axioms / LKI,"I sacrifice [[Manglehorn]] to its own ability to destroy an artifact. If Manglehorn is in the graveyard, does the ability still work?",Yes. Abilities on the stack do not care if the source is still on the battlefield. The ability will resolve and destroy the targeted artifact.,2,The Stack & Spell Interaction,"Ah, a fascinating inquiry into the mechanics of sacrifice and triggered abilities! Let us dissect this interaction with precision.
+
+### 1. The Interaction
+The key card here is **Manglehorn**, which has an ability that triggers when it enters the battlefield, allowing you to destroy a target artifact. You are considering sacrificing Manglehorn to activate this ability while it is in the graveyard.
+
+### 2. The Logic (Step-by-Step)
+- **Sacrifice Mechanics**: To sacrifice Manglehorn, you would move it from the battlefield directly to your graveyard. This action does not destroy it; rather, it is a distinct action that places it in the graveyard (Rule 701.21).
+- **Triggered Abilities**: Manglehorn's ability is a triggered ability that activates upon its entry to the battlefield. Once this ability is placed on the stack, it exists independently of Manglehorn itself (Rule 113.7a). Thus, if Manglehorn is sacrificed after its ability has been triggered, the ability will still resolve using Last Known Information (LKI).
+- **Graveyard State**: If Manglehorn is in the graveyard, it cannot trigger its own ability because it is no longer on the battlefield. The ability requires Manglehorn to be present on the battlefield to trigger in the first place.
+
+### 3. The Ruling
+You cannot sacrifice Manglehorn to its own ability while it is in the graveyard; the ability will not trigger if Manglehorn is not on the battlefield.
+
+### Sources
+[[Manglehorn]], [Rule 701.21 (Sacrifice)], [Rule 113.7a (The Stack)]"
+17,Medium,Stack,"If I cast a spell with [[Split Second]], can my opponent activate a mana ability in response?",Yes. Split Second prevents spells and non-mana abilities from being activated. Mana abilities (like tapping a land) do not use the stack and can still be used.,2,The Stack & Spell Interaction,"Ah, the intricacies of split second! Let us delve into the mechanics of this fascinating ability.
+
+### 1. The Interaction
+The key card in question is any spell with the split second ability, which prevents players from casting spells or activating abilities that aren't mana abilities while it is on the stack.
+
+### 2. The Logic (Step-by-Step)
+- When you cast a spell with split second, it enters the stack and the split second ability takes effect.
+- According to Rule 702.61a, while the spell with split second is on the stack, players cannot cast other spells or activate abilities that aren't mana abilities.
+- However, Rule 702.61b clarifies that players may still activate mana abilities and take special actions while a spell with split second is on the stack.
+- Therefore, your opponent is indeed permitted to activate mana abilities in response to your split second spell, as these abilities are specifically exempt from the restrictions imposed by split second.
+
+### 3. The Ruling
+Your opponent can activate a mana ability in response to your spell with split second.
+
+### Sources
+[[Split Second]], [Rule 702.61a (Split Second)]  
+[[Split Second]], [Rule 702.61b (Split Second)]"
+18,Hard,Triggers,"I control [[Elesh Norn, Mother of Machines]] and an opponent's creature with an ETB ability enters the battlefield. Does it trigger?",No. Elesh Norn's second ability specifically states that permanents entering the battlefield don't cause abilities of permanents your opponents control to trigger.,2,The Stack & Spell Interaction,"Ah, a delightful inquiry into the nuances of triggered abilities and the effects of Elesh Norn, Mother of Machines! Let us dissect this interaction with precision.
+
+### 1. The Interaction
+The key cards in this scenario are Elesh Norn, Mother of Machines, and an opponent's creature that possesses an enters-the-battlefield (ETB) ability. The mechanical conflict arises from Elesh Norn's ability to influence triggered abilities when permanents enter the battlefield.
+
+### 2. The Logic (Step-by-Step)
+- **Elesh Norn's Abilities**: Elesh Norn has two relevant abilities. The first states that if a permanent entering the battlefield causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time. The second ability prevents abilities of permanents your opponents control from triggering when a permanent enters the battlefield.
+  
+- **Opponent's Creature Enters**: When the opponent's creature enters the battlefield, it would normally trigger its own ETB ability. However, since this creature is controlled by your opponent, we must consider Elesh Norn's second ability, which specifically states that ""Permanents entering don't cause abilities of permanents your opponents control to trigger.""
+
+- **Application of the Rules**: According to Rule 603.6a, ETB abilities trigger when a permanent enters the battlefield. However, because Elesh Norn's second ability is in effect, the ETB ability of the opponent's creature does not trigger at all. 
+
+- **Conclusion**: Thus, the opponent's creature entering the battlefield does not cause its ability to trigger due to Elesh Norn's effect.
+
+### 3. The Ruling
+The opponent's creature with an ETB ability does not trigger when it enters the battlefield while you control Elesh Norn, Mother of Machines.
+
+### Sources
+[[Elesh Norn, Mother of Machines]], [Rule 603.6a (Enters-the-battlefield abilities)]"
+19,Medium,Stack,What happens if a spell on the stack has its only target removed before it resolves?,"The spell is 'fizzled' (removed from the stack by the game rules). None of its effects happen, not even the ones that don't depend on the target (like drawing a card).",2,The Stack & Spell Interaction,"Ah, a most intriguing inquiry regarding the nature of targets and the stack! Let us delve into the mechanics of spell resolution and target legality.
+
+### 1. The Interaction
+We are examining a scenario where a spell on the stack has its only target removed before it resolves. This situation is critical, as it directly pertains to the rules governing target legality and spell resolution.
+
+### 2. The Logic (Step-by-Step)
+- **Initial State**: A spell is cast and placed on the stack, targeting a single legal target.
+- **Target Removal**: Before the spell resolves, the target becomes illegal. This could occur due to various reasons, such as the target being destroyed, exiled, or gaining protection from the spell's color.
+- **Resolution Check**: When the spell attempts to resolve, it must check the legality of its target. According to Rule 608.2b, if the target is no longer legal, the spell does not resolve. 
+- **Outcome**: The spell is removed from the stack and placed into its owner's graveyard, as specified in Rule 608.2b. This is a crucial point: the spell does not resolve at all if all its targets are illegal.
+
+### 3. The Ruling
+If a spell on the stack has its only target removed before it resolves, the spell does not resolve and is put into its owner's graveyard.
+
+### Sources
+[[Rule 608.2b]], [[Rule 608.2n]]"
+20,Hard,Costs,"If I have [[Thalia, Guardian of Thraben]] and I want to cast a spell for its [[Overload]] cost, do I still pay the extra {1}?","Yes. First you choose the base cost (Overload), then you apply any cost increases (Thalia), then any cost reductions. The {1} tax from Thalia is added to the Overload cost.",2,The Stack & Spell Interaction,"Ah, a delightful inquiry into the intricacies of cost adjustments and alternative costs! 
+
+### 1. The Interaction
+You are considering the interaction between Thalia, Guardian of Thraben, whose ability increases the cost of noncreature spells, and a spell with the Overload ability, which allows you to pay an alternative cost to cast it.
+
+### 2. The Logic (Step-by-Step)
+- **Thalia's Effect**: Thalia imposes an additional cost of {1} to cast noncreature spells. This means that whenever you cast a noncreature spell, you must add {1} to its mana cost.
+- **Overload Mechanic**: When you choose to cast a spell using its Overload cost, you are opting to pay an alternative cost instead of the spell's normal mana cost. The Overload ability allows you to change the text of the spell, affecting how it interacts with targets.
+- **Cost Calculation**: According to the rules, when determining the total cost of a spell, you start with the mana cost (or alternative cost) and then add any cost increases. Since Thalia's ability applies to noncreature spells, you must add the {1} to the Overload cost as well.
+- **Final Cost**: Therefore, if the Overload cost of the spell is, for example, {R}, you would pay {R} + {1} = {1}{R} in total to cast the spell using its Overload cost.
+
+### 3. The Ruling
+Yes, you must pay the additional {1} when casting a spell for its Overload cost while Thalia, Guardian of Thraben, is on the battlefield.
+
+### Sources
+[[Thalia, Guardian of Thraben]], [Rule 118.10 (Cost Calculation)]  
+[[Overload]], [Rule 702.96a (Overload)]"
+21,Medium,Targets,"I cast [[Decimate]] targeting four legal targets. In response, my opponent hexproofs one of them. Does the spell still resolve?","Yes. A spell with multiple targets only fails to resolve if ALL of its targets become illegal. Since three targets are still legal, Decimate will destroy those three.",3,Targets & Triggers,"Ah, the intricacies of targeting and hexproof! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+You have cast **Decimate**, targeting four legal targets: an artifact, a creature, an enchantment, and a land. In response, your opponent has granted hexproof to one of those targets.
+
+### 2. The Logic (Step-by-Step)
+- **Targeting Requirements**: Decimate requires you to choose legal targets for all four instances of ""target."" Initially, all your targets are legal.
+- **Hexproof Effect**: When your opponent grants hexproof to one of the targets, that specific target becomes illegal for the purposes of Decimate. Hexproof means that the permanent cannot be targeted by spells or abilities controlled by your opponents.
+- **Resolution Check**: According to Rule 608.2b, when Decimate resolves, it checks whether all its targets are still legal. Since one of the targets is now illegal due to hexproof, we must consider the implications.
+- **Partial Resolution**: However, Rule 608.3b states that if a spell has illegal targets, it does not resolve at all. Since Decimate has one illegal target, it fails to resolve entirely and is put into its owner's graveyard.
+
+### 3. The Ruling
+Decimate does not resolve because one of its targets has become illegal due to hexproof, resulting in the spell being removed from the stack and placed into your graveyard.
+
+### Sources
+[[Decimate]], [Rule 608.2b (Targeting)]  
+[[Decimate]], [Rule 608.3b (Resolution)]  
+[[Hexproof]], [Rule 702.11b (Hexproof)]"
+22,Easy,Keywords,Can I target a creature with [[Protection from Black]] using an ability from a black artifact?,"No. Protection from black prevents the creature from being Targeted, Enchanted/Equipped, Blocked, or Damaged (DEBT) by anything black, regardless of whether it is an artifact or a spell.",3,Targets & Triggers,"Ah, the intricacies of targeting and protection! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in question are any creature with ""Protection from Black"" and an ability from a black artifact. The conflict arises from the nature of protection and the targeting rules.
+
+### 2. The Logic (Step-by-Step)
+- **Protection Defined**: A creature with protection from black cannot be targeted by spells or abilities from sources that are black (Rule 702.16b). This includes any abilities that originate from black sources, such as a black artifact.
+- **Targeting Mechanics**: When an ability specifies a target, it must be a legal target at the time of resolution (Rule 608.2b). If the target is illegal due to protection, the ability will not resolve as intended.
+- **The Nature of the Source**: Since the ability from the black artifact is considered to originate from a black source, it cannot legally target a creature with protection from black. Thus, the targeting fails.
+
+### 3. The Ruling
+You cannot target a creature with protection from black using an ability from a black artifact, as the protection prevents it from being a legal target.
+
+### Sources
+[[Protection from Black]], [Rule 702.16b (Protection)]  
+[[Targeting Mechanics]], [Rule 608.2b (Targeting)]"
+23,Medium,Stack,"If I cast [[Ancestral Recall]] and my opponent responds with [[Misdirection]], can they make me draw the cards instead of them?","No. Ancestral Recall targets a 'player'. Misdirection can change the target to any legal player. Your opponent can choose themselves as the target, making them draw the cards.",3,Targets & Triggers,"Ah, the intricacies of spell interactions! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+You are casting **Ancestral Recall**, which allows a target player to draw three cards. Your opponent responds with **Misdirection**, aiming to change the target of Ancestral Recall.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Initial Targeting**: When you cast Ancestral Recall, you choose a target player (likely your opponent) to draw three cards.
+- **Step 2: Misdirection Activation**: Your opponent casts Misdirection, which allows them to change the target of Ancestral Recall. Importantly, Misdirection can target Ancestral Recall because it is a spell with a single target.
+- **Step 3: Target Change**: Upon resolution of Misdirection, the target of Ancestral Recall is changed to a new target, which can be any legal target. However, it cannot target itself, and it must still be a player.
+- **Step 4: Resolution of Ancestral Recall**: After Misdirection resolves, Ancestral Recall now targets your opponent (assuming they choose to target themselves). Thus, they will draw three cards instead of you.
+
+Crucially, Misdirection does not check if the original target is still legal; it simply changes the target to whatever is chosen upon resolution. Therefore, if your opponent chooses themselves as the new target, they will indeed draw the cards.
+
+### 3. The Ruling
+Yes, your opponent can use Misdirection to change the target of Ancestral Recall to themselves, allowing them to draw the three cards instead of you.
+
+### Sources
+[[Ancestral Recall]], [Rule 121.3 (Targeting)]  
+[[Misdirection]], [Rule 121.3 (Targeting)]"
+24,Hard,Copying,"I cast [[Fork]] targeting my opponent's [[Lightning Bolt]]. If the original Bolt is countered, what happens to the Fork?",Fork will fail to resolve (fizzle) because its only target (the Bolt on the stack) is no longer there. You do not get a copy of the spell.,3,Targets & Triggers,"Ah, a most intriguing scenario involving the interplay of spells and their interactions! Let us dissect this situation with the precision it deserves.
+
+### 1. The Interaction
+You have cast **Fork**, targeting your opponent's **Lightning Bolt**. The crux of the matter lies in what occurs if the original Lightning Bolt is countered.
+
+### 2. The Logic (Step-by-Step)
+- When you cast **Fork**, it targets **Lightning Bolt**. Upon resolution, **Fork** creates a copy of **Lightning Bolt** that is red and allows you to choose new targets.
+- If the original **Lightning Bolt** is countered before it resolves, it is removed from the stack and placed into its owner's graveyard. This is governed by Rule 701.6a, which states that a countered spell does not resolve and none of its effects occur.
+- Crucially, the copy created by **Fork** is independent of the original **Lightning Bolt** once it is placed on the stack. This independence is a fundamental principle of the stack (Rule 113.7a).
+- Therefore, even if the original **Lightning Bolt** is countered, the copy created by **Fork** remains on the stack and will resolve as normal, provided it has legal targets.
+
+### 3. The Ruling
+If the original **Lightning Bolt** is countered, the **Fork** copy of **Lightning Bolt** remains on the stack and will resolve, allowing you to deal 3 damage to a legal target.
+
+### Sources
+[[Fork]], [Rule 707.10 (Copying Spells)]  
+[[Lightning Bolt]], [Rule 701.6a (Countering Spells)]"
+25,Medium,Flash,Can I cast a creature with [[Flash]] in response to my opponent's land play?,"No. Playing a land is a special action that does not use the stack. You do not receive priority while a land is being played, only after it has entered the battlefield.",3,Targets & Triggers,"Ah, the intricacies of timing and priority in Magic: The Gathering! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in this scenario are the instant spell **Flash** and the action of your opponent playing a land. The conflict arises from the timing of casting spells and the nature of special actions.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Flash**: The ability of Flash allows you to cast a creature card from your hand at any time you could cast an instant. This means you can indeed cast it during your opponent's turn, but only under specific conditions.
+- **Playing a Land**: When your opponent plays a land, this action is a special action that does not use the stack. According to Rule 305.1, playing a land occurs when the stack is empty, and it cannot be responded to with instants or activated abilities.
+- **Priority and the Stack**: Since your opponent is playing a land, they have priority, and the stack is empty. You cannot respond to the land play with Flash because the act of playing a land does not create an opportunity for you to cast spells. The stack must be empty, and you must have priority to cast an instant.
+
+### 3. The Ruling
+You cannot cast a creature with **Flash** in response to your opponent's land play, as playing a land is a special action that does not use the stack and cannot be responded to.
+
+### Sources
+[[Flash]], [Rule 702.8a (Flash)]; [[Playing a Land]], [Rule 305.1 (Playing a Land)]."
+26,Easy,Keywords,"If my creature has [[Haste]], can I use an ability with the tap symbol the same turn it enters?",Yes. Haste allows a creature to attack and to use abilities with the tap or untap symbol even if you haven't controlled it since the beginning of your most recent turn.,3,Targets & Triggers,"Ah, the intricacies of haste and summoning sickness! A delightful topic indeed.
+
+### 1. The Interaction
+The key card in question is any creature with the Haste ability, which allows it to bypass the usual restrictions imposed by the summoning sickness rule when it enters the battlefield.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Haste**: Haste is a static ability that allows a creature to ignore the summoning sickness rule, which typically prevents a creature from attacking or activating abilities that require tapping or untapping unless it has been under its controller's control since the beginning of their most recent turn (Rule 302.6).
+- **Activated Abilities**: If a creature has an activated ability that includes the tap symbol ({T}), it can be activated as long as the creature has haste. This means that even if the creature just entered the battlefield, it can still tap to activate its ability (Rule 702.10c).
+- **Continuous Control**: The key here is that the creature does not need to have been under your control since the beginning of your turn to activate its tap abilities if it has haste (Rule 702.10).
+
+### 3. The Ruling
+Yes, if your creature has Haste, you can use an ability with the tap symbol the same turn it enters the battlefield.
+
+### Sources
+[[Haste]], [Rule 702.10]  
+[[Activated Abilities]], [Rule 602.5a]  
+[[Summoning Sickness]], [Rule 302.6]"
+27,Hard,Replacement Effects,I have [[Hardened Scales]] in play and I cast a creature that enters with two +1/+1 counters. How many counters does it actually get?,It enters with three counters. Hardened Scales is a replacement effect that modifies the event of 'placing one or more counters' by adding one additional counter.,3,Targets & Triggers,"Ah, the intricacies of counter manipulation! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+You have cast a creature that is set to enter the battlefield with two +1/+1 counters, while you also control a Hardened Scales enchantment.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Initial Counter Placement**: When the creature enters the battlefield, it is instructed to enter with two +1/+1 counters.
+- **Step 2: Hardened Scales Effect**: The effect of Hardened Scales states that if one or more +1/+1 counters would be placed on a creature you control, that many plus one +1/+1 counters are placed on it instead. Thus, instead of the two counters, the creature will receive two plus one, which totals three +1/+1 counters.
+- **Step 3: Application of Effects**: The effect of Hardened Scales modifies the number of counters placed by adding one to the original amount. This is a continuous effect that applies as the creature enters the battlefield.
+
+### 3. The Ruling
+The creature enters the battlefield with three +1/+1 counters due to the effect of Hardened Scales.
+
+### Sources
+[[Hardened Scales]], [Rule 122.6a (Counters on Entering the Battlefield)]"
+28,Medium,Costs,"If I cast a spell for its [[Flashback]] cost, where does it go after it leaves the stack?","It is exiled. The Flashback keyword explicitly states that if the spell would leave the stack, it is exiled instead of going anywhere else.",3,Targets & Triggers,"Ah, a query regarding the fate of spells post-stack! This is a fundamental aspect of spellcasting that every aspiring mage should grasp.
+
+### 1. The Interaction
+The focus here is on the mechanics of casting a spell with the Flashback ability, specifically concerning the transition of the spell after it resolves or is otherwise removed from the stack.
+
+### 2. The Logic (Step-by-Step)
+- When you cast a spell using its Flashback cost, you are effectively utilizing an alternative method to cast the spell from your graveyard. This is governed by the rules surrounding Flashback, which state that the spell is treated as an instant or sorcery while on the stack.
+- Upon resolution, or if the spell is countered or otherwise leaves the stack, the crucial rule to remember is that the spell is exiled instead of being placed in the graveyard or any other zone. This is a unique characteristic of spells cast with Flashback.
+- Thus, regardless of the outcome—whether the spell resolves successfully or is countered—the result remains the same: the spell is exiled.
+
+### 3. The Ruling
+When a spell is cast for its Flashback cost and subsequently leaves the stack, it is exiled.
+
+### Sources
+[[Flashback]], [Rule 702.34a (Flashback)]"
+29,Medium,Combat,"I block a 5/5 creature with a 1/1. Before damage, I use [[Ninjustu]] to return the 1/1 to my hand. What happens to the 5/5?","The 5/5 is still considered 'blocked'. Unless it has Trample, it will deal no combat damage to the defending player, as it has no creature to assign damage to.",3,Targets & Triggers,"Ah, a delightful inquiry into the intricacies of combat and the ninjutsu ability! Let us dissect this interaction with precision.
+
+### 1. The Interaction
+You have a 5/5 creature that is being blocked by your 1/1 creature. You then activate the ninjutsu ability to return the 1/1 to your hand before damage is assigned.
+
+### 2. The Logic (Step-by-Step)
+- **Initial State**: The 5/5 creature is blocked by the 1/1. According to Rule 509.1h, the 1/1 is now a blocking creature.
+- **Ninjutsu Activation**: You activate the ninjutsu ability of a Ninja card in your hand, returning the 1/1 to your hand. This action is valid because the 1/1 is indeed an unblocked attacker (Rule 702.49c).
+- **Effect of Returning the 1/1**: Once the 1/1 is returned to your hand, it is no longer on the battlefield. Consequently, the 5/5 creature, which was blocked by the 1/1, now finds itself with no blockers. According to Rule 510.1c, a blocked creature assigns its combat damage to the creatures blocking it. However, since the 1/1 is no longer present, the 5/5 creature is now considered unblocked.
+- **Combat Damage Assignment**: As the 5/5 is unblocked, it will assign its combat damage to the player or planeswalker it was attacking (Rule 510.1b). 
+
+### 3. The Ruling
+The 5/5 creature will deal its combat damage to the player or planeswalker it was attacking, as it is now unblocked.
+
+### Sources
+[[Ninjutsu]], [Rule 702.49c (Ninjutsu)]  
+[[Combat Damage]], [Rule 510.1b (Combat Damage Assignment)]  
+[[Blocking]], [Rule 509.1h (Blocking Creatures)]"
+30,Hard,Triggers,"I have [[Elesh Norn, Mother of Machines]] and my opponent plays a [[Ravenous Chupacabra]]. Does its ability trigger?",No. Elesh Norn's static ability prevents permanents entering the battlefield from causing abilities of permanents your opponents control to trigger.,3,Targets & Triggers,"Ah, the intricate dance of triggered abilities and the nuances of battlefield interactions! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in this scenario are **Elesh Norn, Mother of Machines** and **Ravenous Chupacabra**. The conflict arises from the Chupacabra's ability, which triggers when it enters the battlefield, and Elesh Norn's ability, which affects how triggered abilities function.
+
+### 2. The Logic (Step-by-Step)
+- **Elesh Norn's Abilities**: Elesh Norn has two relevant abilities. The first states that if a permanent entering the battlefield causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time. The second ability prevents abilities of permanents your opponents control from triggering when a permanent enters the battlefield.
+  
+- **Ravenous Chupacabra's Ability**: When Ravenous Chupacabra enters the battlefield, it triggers its own ability to destroy a target creature an opponent controls. 
+
+- **Application of Elesh Norn's Second Ability**: Since the Chupacabra is entering the battlefield under your opponent's control, Elesh Norn's second ability comes into play. This ability specifically states that permanents entering the battlefield do not cause abilities of permanents your opponents control to trigger. 
+
+- **Conclusion**: Therefore, the Chupacabra's ability does not trigger because Elesh Norn's effect suppresses it. The Chupacabra enters the battlefield, but its ability to destroy a target creature does not activate.
+
+### 3. The Ruling
+The ability of Ravenous Chupacabra does not trigger when it enters the battlefield due to Elesh Norn, Mother of Machines' effect preventing abilities of permanents your opponents control from triggering.
+
+### Sources
+[[Elesh Norn, Mother of Machines]], [Rule 704.5s (Saga Mortality Check)]  
+[[Ravenous Chupacabra]], [Rule 113.7a (The Stack)]"
+31,Easy,Mana,"If I tap a [[Llanowar Elves]] for mana, does it count as playing a land?",No. Tapping a creature for mana is an activated ability that adds mana to your mana pool. It is not the same as the special action of playing a land card.,4,Resources & Mana,"Ah, a common point of confusion regarding the distinction between tapping for mana and playing a land! Let us clarify this matter with precision.
+
+### 1. The Interaction
+The key card in question is **Llanowar Elves**, which has the ability to tap for {G} mana. The query revolves around whether tapping this creature for mana constitutes ""playing a land.""
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Tapping for Mana**: When you tap Llanowar Elves, you are activating its ability to produce {G} mana. This is a triggered mana ability, which resolves immediately and does not use the stack (Rule 605.4a). 
+- **Playing a Land**: To ""play a land"" means to put a land card from your hand onto the battlefield, which is a special action that occurs during your main phase when the stack is empty (Rule 701.18a). Importantly, this action is distinct from simply generating mana.
+- **The Distinction**: Tapping Llanowar Elves for mana does not involve putting a land onto the battlefield; thus, it does not count as playing a land. The act of playing a land is a separate action that can only occur once per turn unless modified by other effects (Rule 305.2).
+
+### 3. The Ruling
+Tapping Llanowar Elves for mana does not count as playing a land.
+
+### Sources
+[[Llanowar Elves]], [Rule 605.4a (Triggered Mana Abilities)]; [[Llanowar Elves]], [Rule 701.18a (Playing a Land)]; [[Llanowar Elves]], [Rule 305.2 (Playing Lands)]."
+32,Medium,Land Types,Can I search for a [[Stomping Ground]] if I use a fetch land like [[Wooded Foothills]]?,"Yes. Wooded Foothills searches for a Forest or a Mountain. Since Stomping Ground has both the 'Forest' and 'Mountain' subtypes, it is a legal target.",4,Resources & Mana,"Ah, the intricate dance of land types and searching mechanics! Let us delve into the specifics of your query regarding the interaction between fetch lands and dual lands.
+
+### 1. The Interaction
+The key cards in question are **Wooded Foothills**, a fetch land, and **Stomping Ground**, a dual land with the types Mountain and Forest. The mechanical conflict arises from the ability of Wooded Foothills to search for a land card of a specific type and whether it can find Stomping Ground.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Understanding Wooded Foothills**: When you activate Wooded Foothills, you pay 1 life and sacrifice it to search your library for a Mountain or Forest card. This is crucial because it specifies the types of lands you can search for.
+  
+- **Step 2: Identifying Stomping Ground**: Stomping Ground is classified as a Mountain and a Forest. Therefore, it meets the criteria set by Wooded Foothills for the types of lands you can search for.
+
+- **Step 3: The Search Mechanic**: According to Rule 701.23b, when searching for cards with a stated quality, you are not required to find all cards of that type, but you may choose to find any that are present. Since Stomping Ground is indeed a Mountain and a Forest, it is a valid target for your search.
+
+- **Step 4: The Action of Searching**: When you search your library using Wooded Foothills, you may indeed find Stomping Ground and put it onto the battlefield, provided it is in your library.
+
+### 3. The Ruling
+You can search for a **Stomping Ground** using **Wooded Foothills**, as it qualifies as both a Mountain and a Forest.
+
+### Sources
+[[Wooded Foothills]], [Rule 701.23b (Searching for Cards)]  
+[[Stomping Ground]], [Rule 701.23b (Searching for Cards)]"
+33,Easy,Mana,Does mana stay in my pool if I move from my First Main Phase to my Combat Phase?,"No. As each step or phase ends, any unspent mana is lost from your mana pool unless an effect specifically says otherwise.",4,Resources & Mana,"Ah, a question that delves into the intricacies of mana management! 
+
+### 1. The Interaction
+You are inquiring about the transition from your First Main Phase to your Combat Phase and the fate of any unspent mana during this transition.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding the Phases**: The turn structure consists of several phases, including the First Main Phase and the Combat Phase. The First Main Phase is indeed the second phase of the turn, while the Combat Phase follows it.
+- **Mana Pool Mechanics**: According to Rule 106.4, when a phase or step ends, any unspent mana in a player's mana pool is emptied. This is a crucial point to grasp.
+- **Transitioning Phases**: As you move from your First Main Phase to the Combat Phase, the end of the First Main Phase triggers the emptying of your mana pool. Thus, any mana that remains unspent will be lost at this juncture.
+
+### 3. The Ruling
+Consequently, any unspent mana in your mana pool will not carry over into your Combat Phase; it will be emptied as you transition from your First Main Phase.
+
+### Sources
+[[Rule 106.4]], [Rule 703.4q]"
+34,Hard,Layers,My opponent has [[Dryad of the Ilysian Grove]]. I play [[Blood Moon]]. Do their lands still tap for any color?,"No. Blood Moon and Dryad both apply in Layer 4. Blood Moon has a later timestamp (if played after) or creates a dependency. The lands become Mountains and lose all other abilities, including the one granted by the Dryad.",4,Resources & Mana,"Ah, a fascinating inquiry into the interplay of enchantments and land types! Let us dissect this interaction with precision.
+
+### 1. The Interaction
+The key cards in question are **Dryad of the Ilysian Grove** and **Blood Moon**. The former allows lands to be every basic land type and grants additional land plays, while the latter transforms nonbasic lands into Mountains, stripping them of their original abilities.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Dryad of the Ilysian Grove**: This card grants all lands you control the ability to tap for mana of each basic land type (Plains, Island, Swamp, Mountain, Forest). Thus, under normal circumstances, your lands would tap for any color of mana.
+  
+- **Step 2: Blood Moon's Effect**: When Blood Moon enters the battlefield, it applies a Layer 4 effect, changing all nonbasic lands into Mountains. This transformation means that those lands lose their original types and abilities, gaining only the Mountain type and the ability to tap for {R}.
+
+- **Step 3: Layer Interaction**: It is crucial to note that while Blood Moon changes the land types (Layer 4), it does not remove the abilities granted by the Dryad (Layer 6). However, since the lands are now only Mountains, they will only tap for {R} and lose the ability to tap for any other colors of mana.
+
+- **Step 4: Conclusion on Tapping for Mana**: Therefore, while the lands retain the ability to tap for mana, they can only produce {R} due to the type change imposed by Blood Moon. The Dryad's effect does not allow them to tap for other colors anymore, as they are no longer recognized as having those basic land types.
+
+### 3. The Ruling
+Your opponent's lands will only tap for {R} and will not tap for any other color of mana after Blood Moon resolves.
+
+### Sources
+[[Dryad of the Ilysian Grove]], [Rule 305.6]  
+[[Blood Moon]], [Rule 614.12]"
+35,Medium,Costs,"If I have [[Thalia, Guardian of Thraben]] in play, does it make my own [[Sol Ring]] cost 2 mana?","Yes. Thalia affects 'noncreature spells' cast by any player, including you. Sol Ring is an artifact (noncreature), so its cost is increased by 1.",4,Resources & Mana,"Ah, the interplay of cost and mana in the realm of Magic: The Gathering is a fascinating subject indeed!
+
+### 1. The Interaction
+We have Thalia, Guardian of Thraben, whose ability increases the cost of noncreature spells by {1}, and Sol Ring, a noncreature artifact that normally costs {1} to cast.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Identify the Spell**: When you attempt to cast Sol Ring, you are dealing with a noncreature spell.
+- **Step 2: Apply Thalia's Ability**: Thalia's ability states that noncreature spells cost {1} more to cast. Therefore, the base cost of Sol Ring, which is {1}, is increased by {1} due to Thalia's effect.
+- **Step 3: Calculate the Total Cost**: The total cost to cast Sol Ring becomes {1} (its original cost) + {1} (Thalia's cost increase) = {2}.
+- **Step 4: Confirm the Mana Value**: It is crucial to note that while the total cost to cast Sol Ring is now {2}, its mana value remains unchanged at 1, as the mana value is determined solely by the mana symbols in the card's cost, not the total cost you pay.
+
+### 3. The Ruling
+Thus, with Thalia, Guardian of Thraben in play, casting Sol Ring indeed costs you 2 mana.
+
+### Sources
+[[Thalia, Guardian of Thraben]], [Rule 601.2f (Total Cost)]  
+[[Sol Ring]], [Rule 202.1a (Mana Cost)]"
+36,Easy,Lands,Can I play a land on my opponent's turn if it has [[Flash]]?,"No. Lands are never cast; they are played. You can only play a land during your own main phase when the stack is empty, regardless of Flash.",4,Resources & Mana,"Ah, the intricacies of timing and the nuances of card abilities! Let us delve into the matter at hand.
+
+### 1. The Interaction
+The key card in question is **Flash**, which allows you to play a creature card at any time you could cast an instant. However, the query pertains to whether you can play a land on your opponent's turn, which is a different scenario altogether.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Flash**: Flash allows you to cast a creature card as if it were an instant, meaning you can do so at any time, including during your opponent's turn. However, this ability applies specifically to creature cards, not lands.
+- **Playing Lands**: According to the rules, a player can only play a land during their own turn, specifically during a main phase when the stack is empty. This is a fundamental principle of the game, as outlined in Rule 305.3, which states that a player cannot play a land if it is not their turn.
+- **Special Actions**: Playing a land is categorized as a special action that does not use the stack, and thus cannot be performed during an opponent's turn. The ability to play lands is restricted to the active player's turn, as per Rule 305.1 and Rule 305.2.
+
+### 3. The Ruling
+You cannot play a land on your opponent's turn, even if you have a creature with Flash; lands can only be played during your own turn.
+
+### Sources
+[[Flash]], [Rule 702.8a (Flash)]; [[Playing Lands]], [Rule 305.3 (Playing Lands)]."
+37,Hard,Replacement Effects,"If I control [[Blood Moon]] and my opponent plays a [[City of Brass]], does the City deal 1 damage to them when tapped?",No. Blood Moon removes all printed abilities from nonbasic lands. The City of Brass is now just a Mountain with the ability '{T}: Add {R}'. Its triggered damage ability no longer exists.,4,Resources & Mana,"Ah, a delightful inquiry into the nuances of land interactions! Let us dissect this scenario with precision.
+
+### 1. The Interaction
+The key cards in question are **Blood Moon**, which transforms nonbasic lands into Mountains, and **City of Brass**, which deals 1 damage to its controller whenever it becomes tapped.
+
+### 2. The Logic (Step-by-Step)
+- When **Blood Moon** enters the battlefield, it applies its effect to all nonbasic lands, including **City of Brass**. According to the rules, this transformation changes City of Brass into a Mountain and grants it the ability ""{T}: Add {R}."" However, it also removes all other abilities that were originally printed on City of Brass, including its triggered ability that deals 1 damage to its controller when tapped (Layer 4 effect).
+  
+- Crucially, we must remember that while **Blood Moon** wipes the printed abilities of City of Brass, it does not affect any abilities that the land may have gained from other sources after the transformation (Layer 6). However, in this case, the ability to deal damage is a printed ability that has been removed.
+
+- Therefore, when your opponent taps **City of Brass** for mana, the ability that would normally trigger to deal 1 damage does not exist anymore due to the effect of **Blood Moon**. Thus, the condition for damage to be dealt is not met.
+
+### 3. The Ruling
+As a result, **City of Brass does not deal 1 damage to your opponent when tapped while under the effect of Blood Moon**.
+
+### Sources
+[[Blood Moon]], [Rule 613 (Layering & Ability Retention)]; [[City of Brass]], [Rule 613 (Layering & Ability Retention)]."
+38,Medium,Legendary Rule,I have a [[Mox Amber]] in play and I cast another one. What happens?,The Legend Rule applies. You must choose one to keep and put the other into its owner's graveyard as a state-based action. This does not count as destruction.,4,Resources & Mana,"Ah, the intricacies of casting spells and the delightful nuances of legendary artifacts! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+You are casting a second copy of [[Mox Amber]] while already controlling one. This situation involves the rules governing casting spells and the characteristics of legendary permanents.
+
+### 2. The Logic (Step-by-Step)
+- **Legendary Rule**: When you cast a second [[Mox Amber]], the legendary rule comes into effect. This rule states that if you control two or more legendary permanents with the same name, you must choose one to keep and the others are put into the graveyard.
+- **Casting the Spell**: As you cast the second [[Mox Amber]], it is placed on the stack. At this moment, it is still a spell and does not yet exist as a permanent on the battlefield.
+- **Resolution**: Once the spell resolves, the new [[Mox Amber]] enters the battlefield. However, since you already control one, you must choose which one to keep. You will retain one and the other will be sent to the graveyard due to the legendary rule.
+
+### 3. The Ruling
+You will have one [[Mox Amber]] remaining on the battlefield, while the other is put into your graveyard due to the legendary rule.
+
+### Sources
+[[Mox Amber]], [Rule 400.7g (Legendary Rule)]"
+39,Easy,Mana,"If a spell costs {2}{G} and I have [[Trinisphere]], how much mana must I pay?","You pay 3 mana ({2}{G}). Trinisphere checks if the total cost is at least 3 mana. Since 2+1=3, Trinisphere does not increase the cost further.",4,Resources & Mana,"Ah, the intricacies of mana costs and the influence of artifacts such as Trinisphere! Let us delve into this matter with the precision it deserves.
+
+### 1. The Interaction
+The key card in question is Trinisphere, which modifies the casting cost of spells that would normally cost less than three mana. The spell you wish to cast costs {2}{G}.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Determine the Base Cost**: The spell you are attempting to cast has a mana cost of {2}{G}. 
+- **Step 2: Apply Trinisphere's Effect**: Trinisphere states that if a spell would cost less than three mana, it instead costs three mana. Here, the total mana cost of your spell is {2} (the green mana is not considered in this step since we are only focusing on the mana cost that is less than three).
+- **Step 3: Lock in the Total Cost**: Since the mana component of your spell's cost is less than three, Trinisphere's effect applies, and you must pay three mana to cast the spell. 
+
+Crucially, the total cost is locked in after determining the effects of Trinisphere, meaning that even if Trinisphere were to leave the battlefield or become tapped after you have locked in the cost, it would not affect the amount you must pay.
+
+### 3. The Ruling
+You must pay a total of three mana to cast the spell.
+
+### Sources
+[[Trinisphere]], [Rule 601.2f (Total Cost Determination)]"
+40,Hard,Axioms / Sagas,I play [[Urza's Saga]] and my opponent has [[Strict Proctor]] in play. What happens to the Saga?,"The Saga enters the battlefield. Its Chapter I ability is a triggered ability. Strict Proctor triggers, and if you don't pay {2}, the Chapter I ability is countered. The Saga stays in play with 1 lore counter but no abilities gained from Chapter I.",4,Resources & Mana,"Ah, the intricate dance of triggered abilities and the nuances of Sagas! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in this scenario are **Urza's Saga**, a Saga enchantment that gains abilities as it accumulates lore counters, and **Strict Proctor**, a creature that counters triggered abilities unless its controller pays {2}.
+
+### 2. The Logic (Step-by-Step)
+1. **Urza's Saga Enters**: When Urza's Saga enters the battlefield, it enters with a lore counter due to its own ability. This is a crucial point, as it is the first step in its lifecycle.
+   
+2. **Triggered Ability**: As Urza's Saga enters, it does not trigger any abilities that would cause Strict Proctor's ability to activate. The Proctor only counters abilities that trigger when a permanent enters the battlefield, and Urza's Saga does not have any such triggered abilities upon entering.
+
+3. **Lore Counters**: On your next turn, during your precombat main phase, you will place a second lore counter on Urza's Saga, bringing it to two counters. This is a turn-based action and does not use the stack.
+
+4. **Chapter Abilities**: Once it has two lore counters, Urza's Saga now has the ability from Chapter I, allowing it to tap for {C}. It also gains the ability from Chapter II, which allows you to pay {2} and tap it to create a 0/0 Construct token.
+
+5. **Final Chapter**: When you place the third lore counter on Urza's Saga, it now has three lore counters, which meets the condition for sacrificing it. However, we must check if it has any chapter abilities at this point.
+
+6. **Strict Proctor's Effect**: If at any point a Layer 4 effect (like Blood Moon) were to remove Urza's Saga's chapter abilities, it would lose those abilities, but it would still retain the lore counters. However, since Strict Proctor does not affect Urza's Saga's abilities upon its initial entry, it does not counter any abilities here.
+
+7. **Sacrifice Check**: Since Urza's Saga has gained its chapter abilities and has three lore counters, it will be sacrificed after the third chapter ability resolves. 
+
+### 3. The Ruling
+Urza's Saga will successfully accumulate lore counters and, upon reaching three counters, will be sacrificed after resolving its final chapter ability, unaffected by Strict Proctor.
+
+### Sources
+[[Urza's Saga]], [Rule 704.5s (Saga Mortality Check)]  
+[[Strict Proctor]], [Rule 113.7a (The Stack)]  
+[[Urza's Saga]], [Rule 714 (Saga Cards)]"
+41,Medium,SBA,"If I have 0 or less life but I control [[Platinum Angel]], do I lose the game?",No. Platinum Angel's static ability creates a continuous effect that stops the state-based action of losing for having 0 life. You continue playing until the Angel leaves the battlefield.,5,State-Based Actions (SBA),"Ah, the intricacies of life totals and game states! Let us delve into this fascinating scenario.
+
+### 1. The Interaction
+The key card in question is **Platinum Angel**, which states that you cannot lose the game while it is under your control. The conflict arises when your life total is 0 or less, which typically would result in a loss according to the rules.
+
+### 2. The Logic (Step-by-Step)
+- **State-Based Actions**: According to Rule 704.5a, a player with 0 or less life loses the game as a state-based action. This is a fundamental principle of the game.
+- **Platinum Angel's Effect**: However, Platinum Angel's ability explicitly states that you cannot lose the game. This ability creates a protective layer around you, preventing the loss condition from taking effect.
+- **Team Dynamics**: In a Two-Headed Giant format, if you control Platinum Angel, neither you nor your teammate can lose the game, even if your life total is 0 or less (Rule 810.8a). This means that the loss condition is effectively nullified while Platinum Angel is on the battlefield.
+
+Crucially, the presence of Platinum Angel means that even though the game recognizes your life total as 0 or less, the game state does not allow you to lose due to its ability. Thus, you remain in the game despite the numerical disadvantage.
+
+### 3. The Ruling
+You do not lose the game while controlling Platinum Angel, even if your life total is 0 or less.
+
+### Sources
+[[Platinum Angel]], [Rule 704.5a (Losing the Game)]  
+[[Platinum Angel]], [Rule 810.8a (Two-Headed Giant Winning and Losing)]"
+42,Hard,SBA,I have 1 life and my opponent casts [[Lightning Helix]] on me. I respond with [[Stifle]] on the 'gain 3 life' part. Can I do that?,"No. Lightning Helix is a single spell, not a triggered ability. Stifle only targets activated or triggered abilities. The damage and life gain happen during the spell's resolution, not as separate triggers.",5,State-Based Actions (SBA),"Ah, the intricacies of the stack and the interaction between abilities! Let us delve into this scenario with the precision it deserves.
+
+### 1. The Interaction
+You are facing a situation where your opponent casts **Lightning Helix**, which deals 3 damage to you and allows them to gain 3 life. In response, you wish to cast **Stifle** to counter the life gain portion of the Lightning Helix.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Understanding Lightning Helix**: When Lightning Helix resolves, it has two effects: dealing 3 damage to you and gaining 3 life for your opponent. Both effects are part of the same spell and will resolve sequentially.
+  
+- **Step 2: Stifle's Targeting**: Stifle can target activated or triggered abilities, but it cannot target the resolution of a spell's effects directly. The life gain from Lightning Helix is not an activated or triggered ability; it is a part of the spell's resolution. Therefore, Stifle cannot target it.
+
+- **Step 3: Resolution of Lightning Helix**: Since Stifle cannot counter the life gain, when Lightning Helix resolves, it will deal 3 damage to you, reducing your life total to -2, and your opponent will gain 3 life, increasing their life total accordingly.
+
+- **Step 4: State-Based Actions**: After the resolution of Lightning Helix, state-based actions will check your life total. Since you are at -2, you will lose the game due to having a life total of 0 or less.
+
+### 3. The Ruling
+You cannot use Stifle to counter the life gain from Lightning Helix, as it is not an activated or triggered ability; thus, you will lose the game after Lightning Helix resolves.
+
+### Sources
+[[Lightning Helix]], [Rule 119.7 (Life Gain Restrictions)]  
+[[Stifle]], [Rule 113.7a (The Stack)]"
+43,Medium,Legendary Rule,"If I have [[Sakashima the Impostor]] copying a [[Griselbrand]], do I have to sacrifice one to the Legend Rule?","No. Sakashima's ability specifically states that its name remains 'Sakashima the Impostor'. Since the names are different, the Legend Rule does not apply even if they are both Legendary and have the same abilities.",5,State-Based Actions (SBA),"Ah, a most intriguing inquiry regarding the nuances of legendary permanents and the complexities of copying! 
+
+### 1. The Interaction
+We have Sakashima the Impostor entering the battlefield as a copy of Griselbrand, a legendary creature. The question at hand is whether the Legend Rule will necessitate the sacrifice of one of these two legendary entities.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Copying Mechanics**: When Sakashima the Impostor enters the battlefield as a copy of Griselbrand, it adopts all of Griselbrand's characteristics, including its name, type, and abilities. However, it retains its own name as ""Sakashima the Impostor,"" which is crucial for the next step.
+  
+- **Step 2: The Legend Rule**: The Legend Rule states that if a player controls two or more legendary permanents with the same name, they must choose one to keep and put the others into their owners' graveyards. In this case, while Sakashima is a copy of Griselbrand, it does not share the same name as Griselbrand due to the stipulation in Sakashima's text that it retains its own name.
+
+- **Step 3: Conclusion**: Since Sakashima the Impostor is named ""Sakashima the Impostor"" and not ""Griselbrand,"" the Legend Rule does not apply here. You will not have to sacrifice either creature, as they do not share the same name.
+
+### 3. The Ruling
+You do not have to sacrifice either Sakashima the Impostor or Griselbrand to the Legend Rule, as Sakashima retains its own name despite copying Griselbrand.
+
+### Sources
+[[Sakashima the Impostor]], [Rule 704.5j (Legend Rule)]  
+[[Griselbrand]], [Rule 704.5j (Legend Rule)]"
+44,Easy,SBA,"If two 2/2 creatures with [[First Strike]] block each other, do they both die?","Yes. Both deal damage in the first strike damage step simultaneously. Since both receive lethal damage, they are both destroyed at the same time during state-based actions.",5,State-Based Actions (SBA),"Ah, the intricacies of combat and the nuances of first strike! Let us delve into this scenario with the precision it deserves.
+
+### 1. The Interaction
+We have two 2/2 creatures, each with first strike, blocking each other. The question at hand is whether they will both perish in this combat encounter.
+
+### 2. The Logic (Step-by-Step)
+- **First Strike Damage Step**: When the combat damage step begins, because both creatures possess first strike, they will assign their combat damage during this first combat damage step (Rule 702.4).
+- **Damage Assignment**: Each 2/2 creature will deal 2 damage to the other. Since both creatures have no toughness modifiers or damage prevention effects, they will each receive 2 damage.
+- **Lethal Damage**: In Magic: The Gathering, a creature is destroyed if it has damage equal to or greater than its toughness. Here, each creature has a toughness of 2 and receives 2 damage, which is indeed lethal damage (Rule 510.1c).
+- **Destruction**: Consequently, both creatures will be destroyed simultaneously as a result of the first strike damage step.
+
+### 3. The Ruling
+Both 2/2 creatures with first strike will die as they deal lethal damage to each other during the first combat damage step.
+
+### Sources
+[[First Strike]], [Rule 702.4 (Combat Damage Steps)]  
+[[510.1c (Combat Damage Assignment)]]"
+45,Hard,SBA,I control [[Death's Shadow]] (normally 13/13) and I am at 13 life. My opponent casts [[Night of Souls' Betrayal]] (-1/-1 to all creatures). Does my Shadow die?,"Yes. At 13 life, Death's Shadow is a 0/0. When Night of Souls' Betrayal applies, it becomes a -1/-1. It is put into the graveyard for having 0 or less toughness before you have a chance to lose life and grow it.",5,State-Based Actions (SBA),"Ah, the intricate dance of power and toughness! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+You control **Death's Shadow**, a creature that has a base power and toughness of 13/13, and your opponent casts **Night of Souls' Betrayal**, which imposes a -1/-1 effect on all creatures.
+
+### 2. The Logic (Step-by-Step)
+- **Initial State**: Death's Shadow is a 13/13 creature while you are at 13 life. Thus, its ability calculates as follows: it gets -X/-X, where X is your life total. In this case, X equals 13, resulting in a net effect of -13/-13.
+  
+- **Applying Night of Souls' Betrayal**: When Night of Souls' Betrayal enters the battlefield, it applies its -1/-1 effect to all creatures, including Death's Shadow. Thus, Death's Shadow now receives an additional -1/-1, making its total modification -14/-14 (from the combination of its own ability and Night of Souls' Betrayal).
+
+- **Final Calculation**: The power and toughness of Death's Shadow are now calculated as follows: 13 (base) - 14 (total modifiers) = -1/-1. 
+
+- **State-Based Actions**: According to the rules, a creature with 0 or less toughness is put into its owner's graveyard as a state-based action. Since Death's Shadow is now -1 toughness, it is indeed sent to the graveyard.
+
+### 3. The Ruling
+Consequently, Death's Shadow dies due to having a toughness of -1 after the application of both its own ability and Night of Souls' Betrayal.
+
+### Sources
+[[Death's Shadow]], [Rule 704.5b (State-Based Actions)]  
+[[Night of Souls' Betrayal]], [Rule 704.5b (State-Based Actions)]"
+46,Medium,Tokens,"If a creature token is returned to my hand by [[Unsummon]], can I cast it again?",No. A token that leaves the battlefield ceases to exist as a state-based action. It cannot be moved back to the battlefield or cast from any other zone.,5,State-Based Actions (SBA),"Ah, the intricacies of token management in Magic: The Gathering! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key card in question is **Unsummon**, which returns a target creature to its owner's hand. The focus here is on a creature token that has been returned to your hand.
+
+### 2. The Logic (Step-by-Step)
+First, we must consider the nature of tokens. When a token is created, it has specific characteristics defined by the spell or ability that created it. However, once a token is on the battlefield, it is treated as a distinct object with its own existence.
+
+Now, when **Unsummon** resolves and returns the token to your hand, it ceases to exist on the battlefield. Importantly, tokens do not retain any special status or limitations once they leave the battlefield. They are simply returned to your hand as a card.
+
+Next, when you wish to cast the token again, you must remember that tokens are not cards in your hand; they are merely representations of creatures that exist only while on the battlefield. However, if you have the means to cast the spell that originally created the token again, you can indeed create a new instance of that token.
+
+Crucially, if the token was created by a spell that is still in your graveyard or library, you can cast that spell again to create a new token. If the original spell is no longer available, you cannot cast the token itself, as it is not a card in your hand.
+
+### 3. The Ruling
+You cannot cast the token itself again, but you can cast the spell that creates it again, provided that spell is available to you.
+
+### Sources
+[[Unsummon]], [Rule 111.4 (Token Creation)]"
+47,Easy,Counters,"If my creature has a +1/+1 counter and it gets a -1/-1 counter, what happens?","The counters cancel each other out. As a state-based action, if a permanent has both +1/+1 and -1/-1 counters, they are removed in pairs until only one type (or none) remains.",5,State-Based Actions (SBA),"Ah, a delightful inquiry into the intricacies of counters! 
+
+### 1. The Interaction
+You are asking about a creature that possesses both a +1/+1 counter and a -1/-1 counter. This situation is governed by the rules regarding the interaction of these counters.
+
+### 2. The Logic (Step-by-Step)
+- **State-Based Actions**: When a permanent has both +1/+1 and -1/-1 counters, the game performs a state-based action to resolve this conflict. According to Rule 122.3, the number of counters removed is determined by the smaller quantity of the two types present.
+- **Counter Removal**: If your creature has one +1/+1 counter and one -1/-1 counter, the game will remove one of each. Thus, the creature will effectively have zero counters remaining.
+- **Final Stats**: The creature's power and toughness will be adjusted accordingly. If it originally had a power and toughness of, say, 2/2, it will now become a 1/1 creature after the counters are removed.
+
+Crucially, do not be misled into thinking that the counters simply cancel each other out; rather, they are removed as a state-based action, which is a fundamental aspect of how the game maintains balance.
+
+### 3. The Ruling
+The creature will have its +1/+1 and -1/-1 counters removed, resulting in it retaining its original power and toughness minus one from each counter, effectively becoming a creature with no counters.
+
+### Sources
+[[Rule 122.3]], [[Rule 704]]"
+48,Hard,Axioms / SBA,"I control a Saga with 3 lore counters, and its final chapter is III. My opponent casts [[Dress Down]] in response to the chapter trigger. Does the Saga stay or go?","It stays. Under Axiom 2 (Rule 704.5s), a Saga is sacrificed only if it has lore counters >= final chapter number AND it has chapter abilities. Dress Down removes the abilities, so the sacrifice condition is not met.",5,State-Based Actions (SBA),"Ah, a delightful inquiry into the intricate dance of enchantments and Sagas! Let us dissect this interaction with precision.
+
+### 1. The Interaction
+You control a Saga with 3 lore counters, and its final chapter is III. Your opponent casts **Dress Down** in response to the chapter trigger of your Saga.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Chapter Trigger**: When the chapter trigger occurs, you would normally place a lore counter on your Saga. However, your opponent's **Dress Down** has entered the battlefield in response.
+  
+- **Step 2: Dress Down's Effect**: **Dress Down** causes all creatures to lose all abilities. Importantly, this includes the abilities of your Saga, but it does not affect the lore counters already present on it. The key here is that **Dress Down** does not remove the lore counters; it merely strips the Saga of its abilities.
+
+- **Step 3: Sacrifice Condition**: According to the rules, a Saga is sacrificed if the number of lore counters is greater than or equal to its final chapter number and it has one or more chapter abilities. Your Saga currently has 3 lore counters, which meets the first condition (3 >= 3). However, due to **Dress Down**, the Saga has lost its chapter abilities (as they are considered part of its printed text box). Thus, it fails the second condition.
+
+- **Step 4: Conclusion on Sacrifice**: Since the Saga has 0 chapter abilities due to the effect of **Dress Down**, it does not meet the criteria for sacrifice. Therefore, it remains on the battlefield.
+
+### 3. The Ruling
+The Saga does not get sacrificed and remains on the battlefield despite having 3 lore counters.
+
+### Sources
+[[Dress Down]], [Rule 704.5s (Saga Mortality Check)]  
+[[Saga]], [Rule 714 (Saga Cards)]"
+49,Medium,SBA,"If I have no cards in library and I am forced to 'put the top card of your library into your graveyard', do I lose the game?",No. You only lose the game if you are required to DRAW a card from an empty library. Putting cards from library to graveyard (milling) is not drawing.,5,State-Based Actions (SBA),"Ah, a most intriguing inquiry regarding the nuances of card interactions and the consequences of an empty library!
+
+### 1. The Interaction
+The key elements at play here involve the action of putting a card from your library into your graveyard while having no cards in your library. This situation raises questions about the consequences of attempting to perform an action that cannot be completed.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding the Action**: When you are instructed to ""put the top card of your library into your graveyard,"" you are attempting to perform an action that requires a card to be present in your library.
+- **State-Based Actions**: According to Rule 704.5b, if a player attempts to draw a card from a library that has no cards in it, they lose the game. This is a critical point because the action of putting a card into your graveyard from an empty library is akin to drawing a card.
+- **Consequences of an Empty Library**: Since you have no cards in your library, the action of putting a card into your graveyard cannot be fulfilled. As a result, you are effectively attempting to draw a card from an empty library, which triggers the loss condition outlined in Rule 121.4.
+
+### 3. The Ruling
+Yes, you will lose the game if you are forced to ""put the top card of your library into your graveyard"" while having no cards in your library.
+
+### Sources
+[[Rule 704.5b]], [[Rule 121.4]]"
+50,Easy,Combat,Can I block a creature with [[Shadow]] using a normal creature?,"No. Creatures with shadow can only be blocked by other creatures with shadow, and they can only block creatures with shadow.",5,State-Based Actions (SBA),"Ah, the intricacies of evasion abilities! Let us delve into the mechanics of shadow and its implications for blocking.
+
+### 1. The Interaction
+The key card in question is any creature with the shadow ability, which restricts how it can be blocked. A normal creature, one without shadow, is attempting to block a creature that possesses this ability.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Shadow**: According to Rule 702.28b, a creature with shadow cannot be blocked by creatures that do not have shadow. This is a fundamental aspect of the shadow ability, which serves as a form of evasion.
+- **Blocking Mechanics**: During the Declare Blockers Step, the game checks the abilities of both the attacking and blocking creatures. If the attacking creature has shadow, it can only be blocked by creatures that also have shadow.
+- **Conclusion**: Therefore, if you attempt to block a creature with shadow using a normal creature (one without shadow), the rules dictate that this action is not permissible.
+
+### 3. The Ruling
+You cannot block a creature with shadow using a normal creature; only creatures with shadow can block it.
+
+### Sources
+[[Shadow]], [Rule 702.28b (Shadow)]"
+51,Medium,Replacement,"If I have [[Leyline of the Void]] and my opponent's creature dies, do 'whenever a creature dies' abilities trigger?","No. Leyline of the Void is a replacement effect that says the card is exiled 'instead' of hitting the graveyard. Since the card never enters the graveyard, it never 'died' by definition.",6,Replacement Effects & Control,"Ah, a most intriguing inquiry regarding the interaction of Leyline of the Void with triggered abilities! 
+
+### 1. The Interaction
+The key card in question is Leyline of the Void, which exiles cards that would otherwise go to an opponent's graveyard. The conflict arises when considering abilities that trigger ""whenever a creature dies.""
+
+### 2. The Logic (Step-by-Step)
+- **Leyline of the Void's Effect**: When Leyline of the Void is on the battlefield, it replaces the event of a creature dying for your opponent with the event of that creature being exiled instead. This is a replacement effect that alters the outcome of the death event.
+- **Triggered Abilities**: Abilities that trigger ""whenever a creature dies"" are specifically looking for the event of a creature dying. However, since Leyline of the Void is in play, the creature does not die in the traditional sense; it is exiled instead.
+- **Intervening 'If' Clause**: According to the rules, if the condition for a triggered ability is not met at the time of the event, the ability does not trigger. Since the creature is exiled rather than dying, the condition for the ""whenever a creature dies"" ability is not satisfied, and thus, it does not trigger.
+
+### 3. The Ruling
+Therefore, if your opponent's creature dies while you control Leyline of the Void, 'whenever a creature dies' abilities will not trigger.
+
+### Sources
+[[Leyline of the Void]], [Rule 603.10a (Zone-Change Triggers)]"
+52,Hard,Replacement,I control [[Alms Collector]] and my opponent casts [[Ancestral Recall]] to draw 3 cards. How many do we each draw?,You each draw one card. Alms Collector replaces the 'draw 2 or more' event with 'you and that player each draw one instead'. The remaining card from Ancestral is lost.,6,Replacement Effects & Control,"Ah, the intricacies of card drawing and replacement effects! Let us delve into this interaction with precision.
+
+### 1. The Interaction
+The key cards in this scenario are **Alms Collector** and **Ancestral Recall**. Your opponent is casting Ancestral Recall, which instructs them to draw three cards, while you control Alms Collector, which has a replacement effect that modifies how card drawing occurs.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Ancestral Recall Resolution**: When your opponent casts Ancestral Recall, they are instructed to draw three cards. This is a single instruction to draw multiple cards, which is crucial for the application of Alms Collector's effect.
+  
+- **Step 2: Alms Collector's Replacement Effect**: Alms Collector's ability states that if an opponent would draw two or more cards, instead you and that player each draw a card. Since Ancestral Recall instructs your opponent to draw three cards, this condition is met.
+
+- **Step 3: Application of the Replacement Effect**: The replacement effect of Alms Collector applies to the entire instruction of drawing three cards. Thus, instead of your opponent drawing three cards, you both draw one card each. 
+
+- **Step 4: Remaining Draws**: The remaining two draws from Ancestral Recall are not executed because the replacement effect has already modified the original instruction. Therefore, the instruction to draw three cards has been replaced with the instruction for both players to draw one card.
+
+### 3. The Ruling
+You and your opponent each draw one card, resulting in a total of two cards drawn instead of three.
+
+### Sources
+[[Alms Collector]], [Rule 121.2]  
+[[Ancestral Recall]], [Rule 121.2]"
+53,Medium,Control,"If I use [[Control Magic]] on my opponent's creature, and then Control Magic is destroyed, who gets the creature?","The creature returns to the control of the player who has the next most recent control effect, or its default owner if no other effects exist.",6,Replacement Effects & Control,"Ah, the intricacies of control and ownership in Magic: The Gathering! This scenario presents a fascinating examination of how control effects operate, particularly in the context of enchantments.
+
+### 1. The Interaction
+The key cards in this situation are your [[Control Magic]], which enchants your opponent's creature, and the creature itself. The conflict arises when Control Magic is destroyed, leading us to consider the implications of control transfer.
+
+### 2. The Logic (Step-by-Step)
+- Initially, when you cast Control Magic, you gain control of your opponent's creature. This is a permanent effect as long as Control Magic remains on the battlefield.
+- If Control Magic is subsequently destroyed, the rules dictate that all effects granting control of objects end. Specifically, Rule 800.4a states that when a player leaves the game (or in this case, when an Aura like Control Magic is destroyed), the control effect it provided ceases to exist.
+- Consequently, the creature reverts to its original controller, which is your opponent. This is because the creature's ownership does not change; only its control does. The Aura's destruction means that the creature is no longer under your control.
+
+### 3. The Ruling
+Thus, when Control Magic is destroyed, your opponent regains control of their creature.
+
+### Sources
+[[Control Magic]], [Rule 800.4a (Leaving the Game)]"
+54,Easy,Replacement,Does [[Doubling Season]] affect the loyalty counters a Planeswalker enters the battlefield with?,"Yes. Entering the battlefield with counters is considered 'placing' counters, so Doubling Season will double the starting loyalty.",6,Replacement Effects & Control,"Ah, the intricacies of token creation and counters! Let us delve into the mechanics of Doubling Season and its interaction with planeswalkers.
+
+### 1. The Interaction
+The key card in question is Doubling Season, which has the ability to double the number of tokens created and the number of counters placed on permanents. We are examining how this affects a planeswalker when it enters the battlefield.
+
+### 2. The Logic (Step-by-Step)
+- **Replacement Effect**: Doubling Season creates a replacement effect that applies when a planeswalker enters the battlefield. According to Rule 306.5b, a planeswalker enters with a number of loyalty counters equal to its printed loyalty number. Doubling Season's effect will double this number.
+- **Application of Doubling Season**: When a planeswalker enters the battlefield, Doubling Season will indeed double the loyalty counters it enters with. For example, if a planeswalker has a printed loyalty of 3, it will enter with 6 loyalty counters due to Doubling Season.
+- **Clarification on Costs**: It is crucial to note that while Doubling Season doubles the loyalty counters upon entry, it does not affect loyalty counters added or removed as part of activated abilities. This is because those counters are placed as a cost, not as an effect, and thus are not subject to Doubling Season's doubling effect.
+
+### 3. The Ruling
+Yes, Doubling Season does affect the loyalty counters a planeswalker enters the battlefield with, doubling the number of counters based on its printed loyalty.
+
+### Sources
+[[Doubling Season]], [Rule 614.1c (Replacement Effects)]  
+[[Planeswalker Loyalty]], [Rule 306.5b (Loyalty Counters)]"
+55,Hard,Replacement,"If I have [[Doubling Season]] and I use a Planeswalker's [+1] ability, do I get two counters?","No. Doubling Season only affects effects. The loyalty increase for activating a Planeswalker's [+] ability is a cost, not an effect, so it is not doubled.",6,Replacement Effects & Control,"Ah, the intricacies of counters and replacement effects! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in this scenario are your [[Doubling Season]] and the Planeswalker whose [+1] ability you are activating. The conflict arises from the interaction between Doubling Season's effect and the cost of activating the Planeswalker's ability.
+
+### 2. The Logic (Step-by-Step)
+- **Doubling Season's Effect**: This enchantment states that if an effect would put counters on a permanent you control, it puts twice that many counters instead. However, it is crucial to note that this effect applies to counters created as a result of an effect, not counters added as a cost.
+  
+- **Cost of the Ability**: When you activate a Planeswalker's [+1] ability, you are required to put a specified number of loyalty counters on it as part of the cost. According to Rule 606.5, costs are not affected by replacement effects like Doubling Season. Therefore, the counters you place as part of the cost are not doubled.
+
+- **Conclusion**: Since the counters added by the [+1] ability are considered a cost and not an effect, Doubling Season does not apply here. You will only place the standard number of counters specified by the ability.
+
+### 3. The Ruling
+You will only receive one counter from the Planeswalker's [+1] ability, not two, due to the nature of costs versus effects.
+
+### Sources
+[[Doubling Season]], [Rule 616.1g (Replacement Effects)]; [[Planeswalker]], [Rule 606.5 (Loyalty Abilities)]."
+56,Medium,Control,"I cast [[Bribery]] and put a creature from my opponent's deck into play. If that creature dies, whose graveyard does it go to?","It goes to its owner's graveyard (your opponent). A card can only ever exist in its owner's graveyard, hand, or library.",6,Replacement Effects & Control,"Ah, a delightful inquiry into the nuances of control and ownership in the realm of Magic: The Gathering!
+
+### 1. The Interaction
+The key card in question is **Bribery**, which allows you to search your opponent's library for a creature card and put it onto the battlefield under your control. The mechanical conflict arises when we consider what happens to that creature if it dies.
+
+### 2. The Logic (Step-by-Step)
+- When you cast **Bribery**, you search your opponent's library and place a creature onto the battlefield under your control. This means you are now the controller of that creature, and it will follow the rules pertaining to your control.
+- If that creature subsequently dies (i.e., is put into a graveyard from the battlefield), we must refer to the definition of ""dies"" as per Rule 700.4, which states that a creature ""dies"" if it is put into a graveyard from the battlefield.
+- Importantly, the creature's ownership remains with your opponent, as they are the original owner of the card. However, since you control the creature, it will go to your opponent's graveyard when it dies, as per Rule 701.21, which states that a permanent you control that dies goes to its owner's graveyard.
+
+### 3. The Ruling
+Thus, if the creature you put onto the battlefield with **Bribery** dies, it goes to your opponent's graveyard.
+
+### Sources
+[[Bribery]], [Rule 700.4 (Dies)], [Rule 701.21 (Sacrifice)]"
+57,Easy,Replacement,"If I have [[Rest in Peace]] in play, what happens to cards milled from a library?",They are exiled. Rest in Peace replaces any event where a card would be put into a graveyard from anywhere with exiling it instead.,6,Replacement Effects & Control,"Ah, a most intriguing inquiry regarding the interaction of milling and the effects of Rest in Peace! 
+
+### 1. The Interaction
+The key card here is Rest in Peace, which exiles all graveyards and replaces any instance of a card being put into a graveyard with exile instead. The action in question involves milling cards from a library, which is defined as putting cards from the top of a library into a graveyard.
+
+### 2. The Logic (Step-by-Step)
+Observe that milling, as per Rule 701.17a, specifically states that a player puts a specified number of cards from the top of their library into their graveyard. However, when Rest in Peace is on the battlefield, it imposes a replacement effect that alters this action. 
+
+1. When a player attempts to mill cards, the action would normally result in those cards being placed into the graveyard.
+2. However, Rest in Peace's effect states that if a card would be put into a graveyard, it is instead exiled. This means that the cards that are milled do not reach the graveyard at all.
+3. Consequently, the milling action is effectively replaced by exiling those cards instead.
+
+Crucially, this means that while the cards are indeed ""milled,"" they will not trigger any abilities that depend on them being placed in the graveyard, as they are exiled instead. 
+
+### 3. The Ruling
+When cards are milled from a library while Rest in Peace is in play, those cards are exiled instead of being put into the graveyard.
+
+### Sources
+[[Rest in Peace]], [Rule 701.17a (Milling)]"
+58,Hard,Control,"I control my opponent's creature with [[Threaten]]. Before the turn ends, I use [[Cloudshift]] on it. Who controls it when it returns?","You do, permanently. Cloudshift returns the card to the battlefield 'under your control'. This creates a new object with no expiration date, unlike Threaten.",6,Replacement Effects & Control,"Ah, a delightful inquiry into the nuances of control and the transient nature of creatures in Magic: The Gathering!
+
+### 1. The Interaction
+You are utilizing **Threaten** to gain control of your opponent's creature temporarily, and then you cast **Cloudshift** on that creature before the end of your turn. This situation presents a fascinating interplay of control effects and the rules governing exiled permanents.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Control via Threaten**: When you cast **Threaten**, you gain control of the target creature until the end of your turn. This means you can use it as if it were your own, but it is still technically owned by"
+59,Medium,Replacement,"If I have [[Blightsteel Colossus]] and it is put into a graveyard, can I target it with [[Reanimate]] in response?","No. Blightsteel Colossus has a replacement effect ('If... would be put... instead'), not a triggered ability. It never hits the graveyard, so it is never a legal target for Reanimate.",6,Replacement Effects & Control,"Ah, the intricacies of timing and targeting in Magic: The Gathering! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in question are **Blightsteel Colossus**, an artifact creature with a unique replacement effect, and **Reanimate**, a sorcery that allows you to return a creature card from a graveyard to the battlefield under your control.
+
+### 2. The Logic (Step-by-Step)
+- **Replacement Effect**: Blightsteel Colossus has a specific ability that states, ""If Blightsteel Colossus would be put into a graveyard from anywhere, reveal it and shuffle it into its owner's library instead."" This means that if Blightsteel Colossus is sent to the graveyard, it does not actually remain there; it is instead shuffled into the library.
+- **Timing of Reanimate**: When you attempt to cast Reanimate, it targets a creature card in a graveyard. However, if Blightsteel Colossus is no longer in the graveyard (due to its replacement effect), it cannot be targeted by Reanimate.
+- **State-Based Actions**: The moment Blightsteel Colossus is about to be put into the graveyard, its replacement effect triggers, and it is shuffled into the library before any other actions can occur. Thus, it is not available as a target for Reanimate.
+
+### 3. The Ruling
+You cannot target Blightsteel Colossus with Reanimate if it is put into a graveyard, as it will be shuffled into its owner's library instead.
+
+### Sources
+[[Reanimate]], [Rule 701.24g (Library Shuffle)]  
+[[Blightsteel Colossus]], [Rule 704.6d (State-Based Actions)]"
+60,Medium,Control,"If my opponent controls my Commander and it dies, can I still choose to put it in the Command Zone?","Yes. The owner of the Commander (you) is the one who makes the choice to move it to the Command Zone when it changes zones, regardless of who controlled it.",6,Replacement Effects & Control,"Ah, a question that delves into the intricacies of the Commander format! Let us explore the nuances of this situation.
+
+### 1. The Interaction
+The key cards in this scenario are your Commander and the circumstances under which it dies while being controlled by your opponent.
+
+### 2. The Logic (Step-by-Step)
+- **Ownership vs. Control**: It is crucial to understand that ownership of a card is distinct from control. You own your Commander regardless of who controls it at any given moment.
+- **Commander Replacement Effect**: According to Rule 903.9b, if your Commander would be put into your hand or library, you may instead choose to place it into the command zone. This replacement effect applies even if your opponent controls the Commander.
+- **State-Based Actions**: When your Commander dies, it is sent to the graveyard. Since it is your Commander, you have the option to place it into the command zone instead of allowing it to remain in the graveyard.
+
+### 3. The Ruling
+Yes, you may choose to put your Commander into the command zone even if your opponent controls it when it dies.
+
+### Sources
+[[Rule 903.9b]], [[Rule 903.9]]"
+61,Easy,Commander,Can I include [[Noble Hierarch]] in a mono-green Commander deck?,"No. Noble Hierarch has blue and white mana symbols in its reminder text for Exalted, but it also has a mana ability that produces {G}, {W}, or {U}. The mana symbols in its rules text give it a color identity of Bant (Green, White, Blue).",7,Commander & Multiplayer,"Ah, the intricacies of color identity in Commander! Let us delve into the matter at hand.
+
+### 1. The Interaction
+The key card in question is **Noble Hierarch**, a creature with a color identity that includes green, white, and blue due to its mana cost and abilities. The query revolves around whether this card can be included in a mono-green Commander deck.
+
+### 2. The Logic (Step-by-Step)
+- **Color Identity**: Noble Hierarch has a color identity of green, white, and blue because of the mana symbols present in its cost and its ability to produce those colors. 
+- **Commander Deck Rules**: According to Rule 903.5c, a card can only be included in a Commander deck if every color in its color identity is also found in the color identity of the deck’s commander. 
+- **Mono-Green Deck**: In a mono-green Commander deck, the color identity of the commander would solely be green. Therefore, any card included in that deck must also have a color identity of green only, or no color at all.
+
+Crucially, since Noble Hierarch has a color identity that includes white and blue, it does not meet the criteria for inclusion in a mono-green deck.
+
+### 3. The Ruling
+You cannot include **Noble Hierarch** in a mono-green Commander deck.
+
+### Sources
+[[Noble Hierarch]], [Rule 903.5c (Commander Deck Inclusion)]"
+62,Medium,Commander,"If my Commander is phased out by an effect like [[Oubliette]], can I choose to move it to the command zone?","No. Phasing is not a zone change. The permanent is treated as though it doesn't exist, but it hasn't 'left the battlefield', so the special action to move a Commander to the command zone does not trigger.",7,Commander & Multiplayer,"Ah, the intricacies of phasing and the command zone! A delightful topic indeed.
+
+### 1. The Interaction
+The key card in question is **Oubliette**, which phases out a target creature, including a Commander. The query revolves around whether a Commander that is phased out can be moved to the command zone.
+
+### 2. The Logic (Step-by-Step)
+- **Phasing Out**: When a creature is phased out by Oubliette, it is treated as though it does not exist. This means it cannot be targeted, and its abilities do not function. Importantly, it does not trigger any ""leaves the battlefield"" abilities because phasing is not the same as leaving the battlefield.
+- **Commander Rules**: According to the Commander rules, a Commander can be moved to the command zone if it is in a graveyard or exile and was put into that zone since the last time state-based actions were checked. However, phasing out does not count as leaving the battlefield; thus, the Commander remains in a phased-out state.
+- **State-Based Actions**: Since the Commander is not in a graveyard or exile but rather in a phased-out state, the conditions for moving it to the command zone are not met. The rules specify that the Commander must be in a zone where it can be moved to the command zone, which phasing does not allow.
+
+### 3. The Ruling
+You cannot choose to move your Commander to the command zone while it is phased out by Oubliette, as it is treated as though it does not exist and has not left the battlefield.
+
+### Sources
+[[Oubliette]], [Rule 704.6d (Commander)]"
+63,Medium,Commander,"If I deal 21 damage to an opponent with a copy of their Commander, do they lose the game?","Yes. Commander damage is a property of the physical card itself. If you control a copy of a Commander that is a permanent, or the actual card, damage dealt by it counts toward the 21-point threshold for that specific Commander.",7,Commander & Multiplayer,"Ah, the intricacies of the Commander format! Let us delve into the nuances of damage and the concept of a ""commander.""
+
+### 1. The Interaction
+The key cards in this scenario are the copy of your opponent's Commander and the rules governing how damage from commanders is calculated. The question revolves around whether damage dealt by a copy of a Commander counts towards the 21 damage threshold that results in a player losing the game.
+
+### 2. The Logic (Step-by-Step)
+- **Commander Definition**: According to the rules, a commander is a specific legendary card designated as such at the beginning of the game. Even if a card is copying a commander, it does not become a commander itself; it merely mimics the characteristics of that card.
+- **Damage Calculation**: The rules state that a player loses the game if they have been dealt 21 or more combat damage by the same commander over the course of the game. This is a state-based action that checks for damage dealt by the actual commander, not by a copy.
+- **Copy Effects**: When a creature becomes a copy of another, it does not inherit the ""commander"" status of the original. Therefore, while the copy may deal damage, it does not count as damage dealt by the original commander for the purposes of determining if a player has lost the game.
+
+### 3. The Ruling
+Thus, if you deal 21 damage to an opponent with a copy of their Commander, they do **not** lose the game, as the damage is not attributed to the original commander.
+
+### Sources
+[[Rule 903.10a]], [Rule 903.10], [[Rule 903.12h]], [[Rule 702.124d]]"
+64,Hard,Commander,"My Commander has a 'Dies' trigger. If I move it to the Command Zone instead of the graveyard, does it still trigger?","Yes. Under current rules, the Commander hits the graveyard first (triggering 'dies' effects) and then, as a state-based action, you may move it to the command zone.",7,Commander & Multiplayer,"Ah, a most intriguing inquiry regarding the nuances of triggered abilities and the command zone! 
+
+### 1. The Interaction
+The key card in question is your Commander, which possesses a 'dies' trigger. The interaction revolves around the decision to move this Commander to the command zone instead of allowing it to go to the graveyard.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding 'Dies' Triggers**: A 'dies' trigger activates when a creature is put into the graveyard from the battlefield. This is a crucial point, as the ability specifically references the graveyard.
+- **Moving to the Command Zone**: According to Rule 903.9, if a Commander would be put into its owner's hand or library, its owner may instead choose to place it into the command zone. This is a replacement effect that occurs before the creature actually reaches the graveyard.
+- **The Resulting Effect**: Since your Commander never actually enters the graveyard, the 'dies' trigger does not activate. The ability requires the creature to be in the graveyard to trigger, and since it is not there, the condition for the trigger is not met.
+
+### 3. The Ruling
+Thus, if your Commander is moved to the command zone instead of the graveyard, its 'dies' trigger will not activate.
+
+### Sources
+[[Rule 903.9b]], [[Rule 903.9]]"
+65,Easy,Commander,Does the 'Commander Tax' apply if I cast my Commander from my hand instead of the Command Zone?,No. The additional cost of {2} for each previous casting only applies when casting the Commander from the command zone.,7,Commander & Multiplayer,"Ah, a question that delves into the nuances of casting mechanics! 
+
+### 1. The Interaction
+The key cards in this scenario are your Commander and the concept of the ""commander tax,"" which is the additional cost incurred when casting your Commander from the command zone.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding the Commander Tax**: When you cast your Commander from the command zone, you must pay an additional {2} for each time it has previously been cast from the command zone during the game. This is outlined in Rule 903.8.
+- **Casting from Hand**: If you choose to cast your Commander from your hand instead of the command zone, the commander tax does not apply. This is crucial to note: casting from your hand is treated differently than casting from the command zone. The official ruling states that casting your Commander from your hand does not add to the tax for future casts from the command zone.
+- **Implications**: Therefore, if you cast your Commander from your hand, you are not subject to the commander tax at that moment, and it will not affect the cost of casting it from the command zone later.
+
+### 3. The Ruling
+The commander tax does not apply when you cast your Commander from your hand; it only applies when casting from the command zone.
+
+### Sources
+[[Command Beacon]], [Rule 903.8 (Commander Tax)]  
+[[Myth Unbound]], [Rule 903.8 (Commander Tax)]  
+[[Sanctum of Eternity]], [Rule 903.8 (Commander Tax)]"
+66,Medium,Commander,"If an opponent uses [[Chaos Warp]] on my Commander, can I put it in the Command Zone instead of shuffling it into my library?","Yes. If a Commander would be put into a library, its owner may choose to put it into the command zone instead. This is a replacement effect.",7,Commander & Multiplayer,"Ah, a most intriguing inquiry regarding the nuances of the Commander format and the interaction with Chaos Warp!
+
+### 1. The Interaction
+The key cards in this scenario are your Commander and the instant spell Chaos Warp. The mechanical conflict arises from the effect of Chaos Warp, which attempts to shuffle a target permanent into its owner's library, and the special rules governing Commanders that allow them to be placed in the command zone instead.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Targeting**: When your opponent casts Chaos Warp, they target your Commander. If your Commander is a legal target at this moment, the spell will resolve.
+- **Step 2: Resolution of Chaos Warp**: Upon resolution, the effect instructs you to shuffle your Commander into your library. However, as per Rule 903.9b, if a Commander would be put into its owner's hand or library, its owner may choose to place it into the command zone instead. This is a replacement effect that applies specifically to Commanders.
+- **Step 3: Application of Replacement Effect**: Since your Commander is being shuffled into your library, you can indeed opt to place it into the command zone instead. This action replaces the original effect of shuffling it into your library.
+
+### 3. The Ruling
+You may put your Commander into the command zone instead of shuffling it into your library when Chaos Warp resolves.
+
+### Sources
+[[Chaos Warp]], [Rule 903.9b (Commander Replacement Effect)]"
+67,Hard,Commander,I control [[Lignify]] attached to an opponent's Commander. Does it still deal 'Commander Damage'?,"Yes. Being a Commander is an innate property of the card. Even if it loses all abilities and becomes a 0/4 Treefolk, any combat damage it deals is still tracked as Commander damage.",7,Commander & Multiplayer,"Ah, a most intriguing inquiry regarding the nuances of Commander damage and the effects of enchantments! 
+
+### 1. The Interaction
+The key cards in this scenario are your opponent's Commander and the enchantment Lignify, which is currently attached to it. The crux of the matter lies in whether Lignify's effect alters the Commander’s ability to deal Commander damage.
+
+### 2. The Logic (Step-by-Step)
+- **Lignify's Effect**: When Lignify enchants a creature, it transforms that creature into a Treefolk with base power and toughness of 0/4 and causes it to lose all abilities. This includes the ability to deal damage, which is crucial for Commander damage.
+- **Commander Damage Definition**: Commander damage is defined as damage dealt by a Commander to a player. Since Lignify removes all abilities from the enchanted creature, including its ability to deal damage, the Commander can no longer deal damage to any player.
+- **Independence of Abilities**: While it is true that abilities gained after Lignify is applied would still function, the Commander’s ability to deal damage is not one that can be regained through subsequent effects, as it has been entirely stripped away by Lignify.
+
+### 3. The Ruling
+Thus, the Commander does not deal Commander damage while enchanted by Lignify, as it has lost the ability to deal damage entirely.
+
+### Sources
+[[Lignify]], [Rule 613 (Layers & Ability Retention)].
+[[Commander Damage]], [Rule 903.3 (Commander Damage Definition)]."
+68,Easy,Commander,"In a Commander game, if a player is eliminated, what happens to the permanents they stole from other players?",Any effects giving the player control of those permanents end immediately. The permanents return to the control of the player who would otherwise control them.,7,Commander & Multiplayer,"Ah, a most intriguing inquiry regarding the fate of stolen permanents in the event of a player's elimination! 
+
+### 1. The Interaction
+The key cards in this scenario are the permanents that have been taken control of by a player through effects such as ""gain control of target creature."" The conflict arises when that player is eliminated from the game.
+
+### 2. The Logic (Step-by-Step)
+- When a player leaves the game, Rule 800.4a dictates that all objects owned by that player leave the game as well. This includes any permanents they control that were originally owned by other players.
+- Specifically, if a player has gained control of a permanent (for instance, through a spell like Act of Treason), that permanent is now under their control but still retains its original ownership.
+- Upon the player's elimination, the game state checks for any objects they control. Since the stolen permanents are still owned by their original players, they will leave the game along with the player who controlled them.
+- Thus, the stolen permanents do not revert to their original owners; they simply cease to exist as the player who controlled them is no longer in the game.
+
+### 3. The Ruling
+When a player is eliminated from a Commander game, all permanents they stole from other players are exiled and cease to exist.
+
+### Sources
+[[Rule 800.4a]], [Rule 800.4]"
+69,Medium,Commander,Can I use [[Command Tower]] to produce mana in a deck where my Commander is [[Hope of Ghirapur]]?,"Command Tower produces mana of any color in your Commander's identity. Since Hope of Ghirapur is colorless, Command Tower produces no mana.",7,Commander & Multiplayer,"Ah, the intricacies of color identity and mana production in Commander! Let us delve into this matter with the precision it deserves.
+
+### 1. The Interaction
+The key cards in question are **Command Tower** and **Hope of Ghirapur**. The crux of the matter lies in the color identity of your commander and how it interacts with the mana-producing ability of Command Tower.
+
+### 2. The Logic (Step-by-Step)
+- **Color Identity**: Hope of Ghirapur is a colorless artifact creature, which means its color identity is devoid of any colors. According to the rules, a card's color identity is determined by the colors of mana in its mana cost and any colored abilities it may have.
+- **Command Tower's Ability**: Command Tower's ability allows you to add one mana of any color in your commander's color identity. However, if your commander has no colors in its color identity, as is the case with Hope of Ghirapur, Command Tower's ability produces no mana.
+- **Rule Application**: Specifically, Rule 903.5 states that a card can only be included in a Commander deck if every color in its color identity is also found in the color identity of the deck’s commander. Since Hope of Ghirapur has no colors, Command Tower cannot produce any mana.
+
+### 3. The Ruling
+You cannot use Command Tower to produce mana in a deck where your commander is Hope of Ghirapur, as Command Tower's ability produces no mana when your commander has no colors in its color identity.
+
+### Sources
+[[Command Tower]], [Rule 903.5]  
+[[Hope of Ghirapur]], [Rule 903.5]"
+70,Hard,Commander,"If my Commander is [[Silvos, Rogue Elemental]] and it is destroyed, can I regenerate it AND move it to the Command Zone?","No. If you regenerate it, it is never destroyed and never leaves the battlefield. Since it doesn't change zones, the option to move it to the command zone never occurs.",7,Commander & Multiplayer,"Ah, the intricacies of the Commander format and the nuances of regeneration! Let us delve into this interaction with precision.
+
+### 1. The Interaction
+The key card in question is **Silvos, Rogue Elemental**, which has the ability to regenerate itself. The scenario involves Silvos being destroyed and the potential to move it to the Command Zone.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Destruction**: When Silvos is destroyed, it goes to the graveyard as a result of state-based actions.
+- **Step 2: Regeneration**: You may activate Silvos's regeneration ability by paying {G}. Regeneration creates a replacement effect that prevents Silvos from being destroyed, instead removing it from the graveyard and tapping it. However, it is crucial to note that regeneration occurs before the card is actually put into the graveyard.
+- **Step 3: Command Zone Option**: After Silvos is destroyed and before it is placed in the graveyard, you have the option to regenerate it. However, if you choose to regenerate Silvos, it will not go to the graveyard at all, thus you cannot subsequently move it to the Command Zone because it never actually entered the graveyard.
+- **Step 4: Command Zone Rules**: According to Rule 903.9a, if a commander is in a graveyard or exile, its owner may choose to move it to the Command Zone. However, since regeneration prevents it from being destroyed, this rule does not apply in this case.
+
+### 3. The Ruling
+You cannot regenerate Silvos and then move it to the Command Zone; if you regenerate it, it will not go to the graveyard and thus cannot be moved to the Command Zone.
+
+### Sources
+[[Silvos, Rogue Elemental]], [Rule 903.9]  
+[[Silvos, Rogue Elemental]], [Rule 704.6d]  
+[[Silvos, Rogue Elemental]], [Rule 903.9a]"
+71,Medium,Copying,"If I use [[Clone]] to copy a creature that has a +1/+1 counter on it, does the Clone also get a counter?","No. Counters are not part of a card's copyable values. Clone only copies what is printed on the card (and other copy effects), not status, counters, or temporary buffs.",8,Copies & Transformations,"Ah, a most intriguing inquiry regarding the nuances of copying creatures! Let us delve into the mechanics of Clone and the implications of its copying ability.
+
+### 1. The Interaction
+The key card in question is **Clone**, which has the ability to enter the battlefield as a copy of any creature. The specific mechanical conflict arises when Clone attempts to copy a creature that has a +1/+1 counter on it.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Entering as a Copy**: When Clone enters the battlefield, it does so as a copy of the chosen creature. According to Rule 707.2, Clone acquires the copiable values of the original creature's characteristics, which include its power, toughness, and any abilities it possesses.
+  
+- **Step 2: Copiable Values**: However, it is crucial to note that Clone does not copy the actual state of the original creature, such as counters or Auras attached to it. This is explicitly stated in the official rulings for Clone, which clarify that it does not copy any non-copy effects that have changed the original creature's characteristics.
+
+- **Step 3: The Counter Conundrum**: Since Clone copies the original creature's characteristics but does not copy counters, it will enter the battlefield as a creature with the same power and toughness as the original creature, but without any +1/+1 counters. The original creature's counters are not part of the copiable values, as they are considered a state-based effect rather than a characteristic defined by the card's text.
+
+### 3. The Ruling
+Thus, if you use Clone to copy a creature that has a +1/+1 counter on it, the Clone will enter as a copy of that creature but will not receive the +1/+1 counter.
+
+### Sources
+[[Clone]], [Rule 707.2 (Copying an Object)]"
+72,Hard,Copying,I use [[Phantasmal Image]] to copy a creature that is being affected by [[Giant Growth]]. What are the Image's stats?,The Image will have the base power and toughness of the creature. Temporary effects like +3/+3 from Giant Growth are not copyable values.,8,Copies & Transformations,"Ah, a delightful inquiry into the nuances of copying and modifying creatures! Let us dissect this interaction with precision.
+
+### 1. The Interaction
+You are utilizing **Phantasmal Image** to copy a creature that is currently receiving a boost from **Giant Growth**. The key elements here are the copy effect of Phantasmal Image and the temporary stat modification from Giant Growth.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Phantasmal Image Enters**: When Phantasmal Image enters the battlefield, it can copy any creature already on the battlefield. Crucially, it will copy the current stats of that creature, which are modified by Giant Growth.
+  
+- **Step 2: Copying Characteristics**: According to the rules governing copy effects, Phantasmal Image will acquire the copiable values of the creature it is copying at the moment it enters. This includes the modified power and toughness due to Giant Growth. 
+
+- **Step 3: Understanding Giant Growth**: Giant Growth grants a target creature +3/+3 until end of turn. Therefore, if the creature being copied had, for example, a base power and toughness of 2/2, it would currently be a 5/5 due to Giant Growth.
+
+- **Step 4: Independence of Abilities**: The ability of Phantasmal Image to copy the creature does not interfere with the ongoing effects of Giant Growth. The Image will enter as a copy of the creature with its current stats, which include the +3/+3 from Giant Growth.
+
+### 3. The Ruling
+Thus, the stats of Phantasmal Image, when it copies a creature affected by Giant Growth, will be the modified values of that creature at the time of copying, including any bonuses from Giant Growth.
+
+### Sources
+[[Phantasmal Image]], [Rule 707.2 (Copying Characteristics)]  
+[[Giant Growth]], [Rule 707.9d (Copy Effects and Characteristics)]"
+73,Medium,Face-down,Can I look at my own face-down creatures created by [[Manifest]] or [[Morph]] at any time?,Yes. You may look at a face-down spell or permanent you control at any time.,8,Copies & Transformations,"Ah, the intricacies of face-down permanents! A topic that often confounds even the most seasoned players.
+
+### 1. The Interaction
+The question pertains to the ability to look at face-down creatures created by the mechanics of manifesting or morphing.
+
+### 2. The Logic (Step-by-Step)
+- **Face-Down Permanents**: When you manifest a card or use a morph ability, the resulting permanent enters the battlefield as a face-down creature. This creature is a 2/2 with no name, abilities, or mana cost.
+- **Rule on Inspection**: According to Rule 708.5, you are permitted to look at any face-down permanent you control at any time. This includes those created through the manifest or morph mechanics.
+- **Special Actions**: The ability to look at your own face-down permanents is not restricted by the state of the game; it is a right granted to you as the controller of those permanents.
+
+### 3. The Ruling
+Yes, you may look at your own face-down creatures created by manifesting or morphing at any time.
+
+### Sources
+[[Manifest]], [Rule 701.40a (Manifesting a Card)]  
+[[Morph]], [Rule 702.37d (Morph Ability)]  
+[[Face-Down Spells and Permanents]], [Rule 708 (Face-Down Spells and Permanents)]"
+74,Hard,Transform,"If I copy the front face of a transforming double-faced card like [[Delver of Secrets]], can the copy transform?",No. A copy of a transforming double-faced card cannot transform unless the copy itself is a double-faced card. Most tokens or clones will simply stay on the copied face.,8,Copies & Transformations,"Ah, a most intriguing inquiry regarding the nature of double-faced cards and their transformative capabilities! 
+
+### 1. The Interaction
+You are asking about the interaction between a copy of the front face of a transforming double-faced card, specifically using [[Delver of Secrets]] as an example.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Double-Faced Cards**: A double-faced card, such as Delver of Secrets, has two distinct faces: the front face (Delver of Secrets) and the back face (Delver of Secrets transformed). The ability to transform is inherent to the card itself and is only applicable when the card is in its original form.
+  
+- **Copying the Front Face**: When you copy the front face of Delver of Secrets, you create a token or a creature that has the characteristics of that front face. However, it is crucial to note that this copy is not a double-faced card; it is merely a representation of the front face.
+
+- **Transformation Mechanics**: According to the rules, only permanents represented by double-faced cards can transform. Since the copy of Delver of Secrets is not a double-faced card, it cannot transform. The transformation ability is tied to the original card's characteristics, which the copy lacks.
+
+- **Rule Application**: Specifically, Rule 712.9 states that only permanents represented by double-faced cards can transform. Since your copy is not a double-faced card, it cannot undergo the transformation process.
+
+### 3. The Ruling
+Thus, if you copy the front face of a transforming double-faced card like Delver of Secrets, the copy cannot transform.
+
+### Sources
+[[Delver of Secrets]], [Rule 712.9 (Transform)]"
+75,Medium,Copying,"If I cast [[Rite of Replication]] kicked on a [[Gray Merchant of Asphodel]], do the tokens see each other for Devotion?","Yes. All tokens enter the battlefield simultaneously. When their triggered abilities go on the stack and resolve, they will count the black mana symbols of all tokens currently on the battlefield.",8,Copies & Transformations,"Ah, a most intriguing inquiry regarding the interaction of tokens and devotion! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+You are casting **Rite of Replication** with its kicker cost targeting **Gray Merchant of Asphodel**. The question revolves around whether the tokens created by Rite of Replication will see each other for the purpose of calculating devotion to black.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Casting Rite of Replication**: When you cast Rite of Replication and pay the kicker cost, you create five tokens that are copies of Gray Merchant of Asphodel. Each of these tokens will have the same abilities and characteristics as the original Gray Merchant, including the ability that triggers when it enters the battlefield.
+
+- **Step 2: Entering the Battlefield**: As each token enters the battlefield, it will trigger its own ability, which states that each opponent loses life equal to your devotion to black. At this moment, we must consider what constitutes devotion.
+
+- **Step 3: Calculating Devotion**: Devotion to black is calculated based on the number of black mana symbols in the mana costs of permanents you control. Since the tokens are copies of Gray Merchant, they will have the same mana cost of {3}{B}{B}, contributing three black mana symbols each to your devotion.
+
+- **Step 4: Interaction of Tokens**: Crucially, when calculating devotion, the tokens do indeed see each other. This is because they are all considered to be on the battlefield simultaneously, and each token contributes to the total devotion count. Therefore, if you control five tokens, your devotion to black will be 3 (from one token) multiplied by 5 (the number of tokens), resulting in a total devotion of 15.
+
+### 3. The Ruling
+Yes, the tokens created by Rite of Replication do see each other for the purpose of calculating devotion to black, resulting in a significantly increased total devotion.
+
+### Sources
+[[Rite of Replication]], [Rule 700.5]  
+[[Gray Merchant of Asphodel]], [Rule 700.5]"
+76,Easy,Copying,"If I copy a spell on the stack, does the copy count as being 'cast' for abilities like Storm?","No. Copying a spell on the stack creates a copy directly on the stack. It is not 'cast', so it does not trigger abilities that look for spells being cast.",8,Copies & Transformations,"Ah, a most intriguing inquiry regarding the nuances of spell interactions and the nature of copies! 
+
+### 1. The Interaction
+The question at hand concerns whether a copy of a spell, created by an effect such as Storm, is considered to be 'cast' for the purposes of abilities that trigger upon casting spells.
+
+### 2. The Logic (Step-by-Step)
+To clarify this matter, we must delve into the mechanics of spell copying and the specific rules governing such interactions:
+
+- **Understanding Storm**: The Storm ability triggers when you cast a spell, creating copies based on the number of spells cast prior to it. The key phrase here is ""when you cast this spell,"" which indicates that the ability is contingent upon the act of casting.
+  
+- **Nature of Copies**: When a spell is copied, as per Rule 707.10, the copy is placed on the stack but is not considered to be 'cast.' This distinction is crucial. The copies do not trigger any abilities that activate upon casting a spell, including the Storm ability itself.
+
+- **Independence of Abilities**: Once a spell is placed on the stack, it exists independently of its source. Thus, while the original spell may have triggered Storm, the copies created do not contribute to the Storm count because they are not cast; they are merely copies that resolve like normal spells.
+
+### 3. The Ruling
+In conclusion, a copy of a spell created by an effect such as Storm does not count as being 'cast' for the purposes of abilities that trigger upon casting spells.
+
+### Sources
+[[Storm]], [Rule 702.40a (Storm)]  
+[[Copying Spells]], [Rule 707.10 (Copying Spells)]  
+[[Independence of Abilities]], [Rule 113.7a (The Stack)]"
+77,Hard,Copying,I have [[Mirror Box]] and I copy my legendary Commander. What happens if Mirror Box is destroyed later?,The Legend Rule will apply immediately as a state-based action. You will have to choose one of the legendary permanents with the same name to keep and put the rest into the graveyard.,8,Copies & Transformations,"Ah, the intricacies of legendary permanents and the legend rule! Let us delve into this fascinating interaction.
+
+### 1. The Interaction
+You control a [[Mirror Box]], which allows you to bypass the legend rule for your legendary Commander. You then create a copy of that Commander. The question arises: what occurs if the Mirror Box is subsequently destroyed?
+
+### 2. The Logic (Step-by-Step)
+- **Initial State**: With Mirror Box on the battlefield, you can control multiple legendary permanents with the same name without the legend rule applying. Your copied Commander is treated as a separate entity, but it retains the legendary status.
+  
+- **Effect of Mirror Box**: While Mirror Box is in play, it allows you to have multiple copies of your Commander without any being sent to the graveyard due to the legend rule. Each legendary creature you control, including your Commander and its copy, benefits from the +1/+1 bonus provided by Mirror Box.
+
+- **Destruction of Mirror Box**: When Mirror Box is destroyed, the legend rule reactivates. You now have two legendary permanents with the same name: your original Commander and the copy. According to the legend rule, you must choose one of these legendary permanents to keep, while the other must be put into the graveyard.
+
+- **State-Based Actions**: The moment Mirror Box leaves the battlefield, state-based actions are checked. Since you control two legendary permanents with the same name, you must comply with the legend rule and sacrifice one of them.
+
+### 3. The Ruling
+Upon the destruction of Mirror Box, you must choose one of your legendary permanents (the original Commander or the copy) to keep, while the other is sent to the graveyard due to the legend rule.
+
+### Sources
+[[Mirror Box]], [Rule 903.9c (Legend Rule)]"
+78,Medium,Face-down,"If a face-down creature is destroyed, does it reveal what it was to all players?","Yes. When a face-down permanent leaves the battlefield, it is turned face up as it moves to the new zone (like the graveyard).",8,Copies & Transformations,"Ah, a question that delves into the nuances of face-down permanents! 
+
+### 1. The Interaction
+We are examining the scenario where a face-down creature is destroyed. The key aspect here is understanding the implications of a face-down permanent's destruction and the rules governing its revelation.
+
+### 2. The Logic (Step-by-Step)
+- When a face-down creature is destroyed, it is sent to the graveyard. 
+- According to Rule 708.9, when a face-down permanent moves from the battlefield to any other zone, its owner must reveal it to all players as they move it. This applies specifically to face-down permanents, including creatures.
+- Therefore, upon destruction, the face-down creature must be revealed to all players, disclosing its identity and characteristics.
+
+### 3. The Ruling
+Yes, if a face-down creature is destroyed, it must be revealed to all players as it moves to the graveyard.
+
+### Sources
+[[Rule 708.9]], [Rule 708 (Face-Down Spells and Permanents)]"
+79,Hard,Copying,I copy a [[Questing Beast]] with [[Alter Ego]]. Does the copy have the 'can't be countered' and 'enters with counters' abilities of Alter Ego?,The 'can't be countered' was part of the casting process. The copy effect is the Questing Beast plus a +1/+1 counter if paid. The counter becomes part of the object but is not a 'copyable value' for future clones.,8,Copies & Transformations,"Ah, the intricacies of copying effects! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+You are attempting to copy a [[Questing Beast]] using [[Alter Ego]]. The key points of interest are the abilities of both cards, particularly the unique characteristics of Alter Ego.
+
+### 2. The Logic (Step-by-Step)
+- **Copying Process**: When you use Alter Ego to copy Questing Beast, you must first understand that Alter Ego has a specific ability that allows it to enter as a copy of any creature on the battlefield, but it also states that it enters with additional +1/+1 counters.
+- **Rule Application**: According to Rule 707.9a, when Alter Ego copies Questing Beast, it will gain the copiable values of Questing Beast, which include its power, toughness, and abilities. However, the additional effects of Alter Ego (such as entering with +1/+1 counters) are not part of the copied characteristics of Questing Beast.
+- **Exception Clause**: Importantly, Rule 707.9e states that if a copy effect includes an exception that’s an additional effect rather than a modification of the affected object’s characteristics, that exception does not apply if another copy effect is applied afterward. In this case, since Alter Ego is copying Questing Beast, the additional effects of Alter Ego do not apply to the copy.
+
+### 3. The Ruling
+The copy of Questing Beast created by Alter Ego does not have the 'can't be countered' and 'enters with counters' abilities of Alter Ego; it only possesses the characteristics and abilities of Questing Beast.
+
+### Sources
+[[Questing Beast]], [Rule 707.9a (Some copy effects cause the copy to gain an ability as part of the copying process.)]  
+[[Alter Ego]], [Rule 707.9e (Some replacement effects that generate copy effects include an exception that’s an additional effect rather than a modification of the affected object’s characteristics.)]"
+80,Medium,Copying,"If I copy a land that has been turned into a creature by [[Nissa, Who Shakes the World]], is the copy a creature?","No. The effect making the land a creature is a continuous effect, not a copyable value. The copy will just be a non-creature land.",8,Copies & Transformations,"Ah, the intricacies of copying and transforming permanents! Let us delve into this fascinating interaction.
+
+### 1. The Interaction
+The key cards in this scenario are **Nissa, Who Shakes the World**, which can turn a land into a creature, and a copy effect that targets that land-turned-creature.
+
+### 2. The Logic (Step-by-Step)
+First, we must recognize that Nissa's ability allows a noncreature land to become a 0/0 Elemental creature with vigilance and haste. This transformation is crucial because it alters the land's characteristics.
+
+Now, when you apply a copy effect to this land-turned-creature, we must consider the rules governing copying. According to Rule 707.5, when an object enters the battlefield as a copy of another object, it becomes a copy as it enters. This means it will adopt the copiable values of the original object at the moment of copying.
+
+Crucially, since the land is currently a creature due to Nissa's effect, the copy will also be a creature. The copy effect does not revert the land back to its original state; it retains the characteristics of the land as a creature, including its power, toughness, and any abilities it has gained.
+
+### 3. The Ruling
+Thus, if you copy a land that has been turned into a creature by Nissa, the copy will indeed be a creature.
+
+### Sources
+[[Nissa, Who Shakes the World]], [Rule 707.5 (Copying Objects)]"
+81,Medium,Costs,"If I cast [[Walking Ballista]] where X=3, what is its mana value on the stack?","On the stack, X counts as the chosen value. So for X=3, the mana value (CMC) is 3+3 = 6. In any other zone, X is considered 0.",9,Costs & X Spells,"Ah, the intricacies of mana costs and the enigmatic variable known as X! Let us delve into the mechanics of this situation.
+
+### 1. The Interaction
+The card in question is **Walking Ballista**, which has a mana cost of {X}{X}. You are casting it with X set to 3, and we need to determine its mana value while it resides on the stack.
+
+### 2. The Logic (Step-by-Step)
+- **Casting the Spell**: When you cast Walking Ballista, you announce the value of X as 3. This is crucial because the rules dictate that the value of X is determined at the time the spell is cast.
+- **Mana Value Calculation**: According to Rule 202.3e, when calculating the mana value of an object with an {X} in its mana cost, X is treated as the value chosen for it while the object is on the stack. Since you have chosen X to be 3, the mana value of Walking Ballista on the stack is calculated as follows:
+  - The mana cost is {3}{3}, which totals to 6.
+- **Final Consideration**: Thus, the mana value of Walking Ballista on the stack is indeed 6, as both instances of X contribute to the total.
+
+### 3. The Ruling
+The mana value of Walking Ballista on the stack, when cast with X=3, is 6.
+
+### Sources
+[[Walking Ballista]], [Rule 202.3e (Mana Value Calculation)]"
+82,Easy,Costs,Can I pay the [[Kicker]] cost of a spell if I am casting it for free via an effect?,"Yes. When casting a spell without paying its mana cost, you can still pay optional additional costs like Kicker or Buyback.",9,Costs & X Spells,"Ah, a most intriguing inquiry regarding the nuances of casting spells and the kicker mechanic! 
+
+### 1. The Interaction
+The question at hand concerns whether one can pay the kicker cost of a spell when casting it for free due to an effect. This involves understanding the relationship between additional costs and alternative casting methods.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Kicker**: Kicker is an optional additional cost that can be paid when casting a spell. The rules state that you may declare your intention to pay the kicker cost as you cast the spell (Rule 702.33a).
+- **Casting for Free**: If an effect allows you to cast a spell for free, it typically means you do not pay its mana cost. However, the rules for paying additional costs still apply (Rule 118.8a). 
+- **Kicker and Free Casting**: When casting a spell for free, you are not paying its mana cost, but you can still choose to pay any additional costs, including kicker costs, as long as you have the necessary resources to do so. Thus, if the effect allows you to cast the spell without paying its mana cost, you may still opt to pay the kicker cost if you have the required mana available.
+
+### 3. The Ruling
+Yes, you can pay the kicker cost of a spell even if you are casting it for free via an effect, provided you have the necessary resources to do so.
+
+### Sources
+[[Kicker]], [Rule 702.33a (Kicker)]  
+[[Additional Costs]], [Rule 118.8a]"
+83,Hard,Costs,I have [[Trinisphere]] and I want to cast [[Force of Will]] by exiling a blue card. How much mana do I pay?,"You pay {3}. Trinisphere is applied after all other cost additions and subtractions. Since you are paying {0} via the alternative cost, Trinisphere sees that the cost is less than 3 and bumps it up to {3}.",9,Costs & X Spells,"Ah, the intricacies of cost determination in the presence of Trinisphere! Let us delve into this fascinating interaction.
+
+### 1. The Interaction
+You wish to cast **Force of Will** while **Trinisphere** is on the battlefield. The key conflict arises from Trinisphere's effect, which modifies the cost of spells based on their mana value.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Understanding Force of Will's Cost**: The mana cost of **Force of Will** is {3}{U}{U}, but it has an alternative cost that allows you to pay 1 life and exile a blue card instead of paying its mana cost. Regardless of how you choose to pay, the mana value of Force of Will remains 5.
+
+- **Step 2: Trinisphere's Effect**: Trinisphere states that any spell that would cost less than three mana to cast instead costs three mana. Since the alternative cost of Force of Will (which is effectively 0 mana) is less than three, Trinisphere's effect applies.
+
+- **Step 3: Total Cost Calculation**: When you attempt to cast Force of Will using its alternative cost, you start with the alternative cost (0 mana), and then you must add Trinisphere's effect, which raises the cost to three mana. Thus, you must pay a total of three mana to cast Force of Will.
+
+- **Step 4: Paying the Cost**: You can still choose to exile a blue card and pay 1 life, but you must also provide three mana to satisfy Trinisphere's requirement. Therefore, you will need to pay three mana in addition to the life payment.
+
+### 3. The Ruling
+You must pay a total of three mana (in addition to exiling a blue card and paying 1 life) to cast **Force of Will** while **Trinisphere** is on the battlefield.
+
+### Sources
+[[Force of Will]], [Rule 202.1a (Mana Cost)]  
+[[Trinisphere]], [Rule 202.1a (Mana Cost)]"
+84,Medium,Costs,"If a spell has [[Convoke]], can I tap a creature with summoning sickness to help pay for it?",Yes. Convoke is not a tap ability of the creature ({T}). It is a way to pay the spell's cost. Summoning sickness only prevents attacking and abilities with the {T} or {Q} symbol.,9,Costs & X Spells,"Ah, the nuances of summoning sickness and the convoke ability! A delightful topic indeed.
+
+### 1. The Interaction
+The key card in question is any spell with the convoke ability, which allows you to tap creatures to help pay for its casting cost. The specific mechanical conflict arises when considering whether a creature with summoning sickness can be tapped for this purpose.
+
+### 2. The Logic (Step-by-Step)
+- **Summoning Sickness**: Recall that a creature is considered to have summoning sickness if it has not been under your control since the beginning of your most recent turn. This condition prevents the creature from attacking or activating abilities that include the tap symbol.
+- **Convoke Mechanism**: The convoke ability allows you to tap creatures rather than pay mana to cast a spell. However, it does not alter the fundamental rules regarding the tapping of creatures.
+- **Tapping for Convoke**: When you tap a creature to convoke a spell, you are indeed activating a cost associated with casting that spell. However, the rules governing summoning sickness still apply. Therefore, a creature with summoning sickness cannot be tapped to help pay for the spell's cost, as it cannot activate abilities that require it to tap.
+
+### 3. The Ruling
+You cannot tap a creature with summoning sickness to help pay for a spell with convoke.
+
+### Sources
+[[Convoke]], [Rule 702.51a (Convoke)]  
+[[Summoning Sickness Rule]], [Rule 302.6]"
+85,Hard,Costs,I cast [[Chalice of the Void]] with X=0. What is its mana value while on the stack?,"On the stack, the mana value is 0+0 = 0. Chalice's CMC is always 2X while on the stack, and 0 everywhere else.",9,Costs & X Spells,"Ah, a delightful inquiry into the intricacies of mana costs and spell casting! 
+
+### 1. The Interaction
+You are casting **Chalice of the Void** with a chosen value of X equal to 0. This situation raises questions about how the game interprets the mana value of the spell while it is on the stack.
+
+### 2. The Logic (Step-by-Step)
+- When you cast **Chalice of the Void**, you announce the value of X as 0. According to Rule 107.3a, while the spell is on the stack, any X in its mana cost equals the announced value.
+- Thus, the mana cost of **Chalice of the Void** becomes {0}{0} when it is on the stack, leading to a total mana value of 0.
+- Rule 202.3e confirms that when calculating the mana value of an object with an {X} in its mana cost, X is treated as the value chosen for it while the object is on the stack. Since you chose X to be 0, the mana value is indeed 0.
+
+### 3. The Ruling
+Therefore, while **Chalice of the Void** is on the stack with X=0, its mana value is 0.
+
+### Sources
+[[Chalice of the Void]], [Rule 202.3e (Mana Value Calculation)]"
+86,Easy,Costs,"If I cast a spell with [[Delve]], does exiling cards from my graveyard change the spell's mana value?",No. Delve is an alternative way to pay the mana cost. The mana value (CMC) is determined by the symbols printed in the top right corner of the card.,9,Costs & X Spells,"Ah, a question that delves into the intricacies of spell casting! 
+
+### 1. The Interaction
+You are inquiring about the relationship between the delve mechanic and the mana value of a spell. Specifically, you wish to know if exiling cards from your graveyard to pay for a spell with delve alters its mana value.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Delve**: Delve allows you to exile cards from your graveyard to pay for the generic mana costs of a spell. However, it is crucial to note that delve does not change the spell's mana cost or mana value. 
+- **Mana Value Definition**: The mana value of a spell is determined by the total cost printed on the card, irrespective of how you choose to pay that cost. This means that even if you exile cards to reduce the amount of mana you need to pay, the spell's mana value remains constant.
+- **Rule Reference**: According to Rule 118.9c, an alternative cost (like delve) does not alter the mana cost of the spell, and thus, any spells or abilities that reference the mana cost will see the original value.
+
+### 3. The Ruling
+Exiling cards from your graveyard to cast a spell with delve does not change the spell's mana value; it remains as printed on the card.
+
+### Sources
+[[Delve]], [Rule 702.66a (Delve)]; [[Mana Value]], [Rule 118.9c (Additional Costs)]."
+87,Medium,Costs,Can I cast a spell for its [[Overload]] cost if an effect lets me cast it 'without paying its mana cost'?,No. Overload is an alternative cost. You can only apply one alternative cost to a spell. 'Without paying its mana cost' is already an alternative cost.,9,Costs & X Spells,"Ah, a most intriguing inquiry regarding the nuances of casting spells! Let us delve into the mechanics of Overload and the implications of casting spells without paying their mana costs.
+
+### 1. The Interaction
+The key card in question is Overload, which allows you to pay an alternative cost to modify the spell's effect. The query revolves around whether you can utilize this alternative cost when an effect permits you to cast the spell without paying its mana cost.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding Overload**: Overload allows you to pay a specific cost instead of the spell's mana cost, fundamentally altering its text to affect ""each"" rather than a ""target."" This is a crucial distinction, as it broadens the spell's impact.
+  
+- **Casting Without Paying Mana Cost**: When an effect allows you to cast a spell ""without paying its mana cost,"" it means you are not required to pay the spell's mana cost at all. However, this does not inherently allow you to pay any alternative costs, such as the Overload cost.
+
+- **Rule Application**: According to Rule 118.6a, if a cost is unpayable, it remains unpayable even if an alternative cost is applied. Since casting a spell without paying its mana cost does not permit you to pay the Overload cost, you cannot utilize Overload in this scenario.
+
+- **Conclusion**: Therefore, while you may cast the spell without paying its mana cost, you cannot simultaneously pay the Overload cost, as the spell is being cast without the need to pay any costs at all.
+
+### 3. The Ruling
+You cannot cast a spell for its Overload cost if an effect allows you to cast it without paying its mana cost.
+
+### Sources
+[[Overload]], [Rule 702.96a (Overload)]  
+[[Casting a Spell]], [Rule 118.6a (Casting a Spell)]"
+88,Hard,Costs,"I control [[Lodestone Golem]] ({1} more for non-artifact spells). If I cast a non-artifact spell with [[Delve]], can I exile a card to pay for the Golem's tax?","Yes. Delve allows you to exile cards to pay for any part of the generic mana cost, including additional costs or taxes like the one from Lodestone Golem.",9,Costs & X Spells,"Ah, a most intriguing inquiry regarding the interplay of cost adjustments and delve mechanics! Let us dissect this interaction with the precision it deserves.
+
+### 1. The Interaction
+You control **Lodestone Golem**, which imposes an additional cost of {1} for casting non-artifact spells. You wish to cast a non-artifact spell that has the **Delve** ability, which allows you to exile cards from your graveyard to reduce the generic mana cost of the spell.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Understanding Costs**: When you cast a non-artifact spell, the total cost to cast it is calculated by taking its mana cost and adding any additional costs, such as the {1} from **Lodestone Golem**. Thus, if the spell normally costs {X}, the total cost becomes {X + 1}.
+
+- **Step 2: Delve Mechanic**: The **Delve** ability allows you to exile cards from your graveyard instead of paying for generic mana in the spell's total cost. This means that for each generic mana you would normally pay, you can exile a card instead.
+
+- **Step 3: Application of Costs**: The key here is that **Lodestone Golem**'s effect applies to the total cost of the spell, which includes the cost you would pay after considering **Delve**. Therefore, if the spell's total cost is {X + 1}, you can still exile cards to pay for the generic mana cost, but you must account for the additional {1} imposed by the Golem.
+
+- **Step 4: Exiling Cards**: You can indeed exile cards to pay for the generic mana cost of the spell, but you must still pay the additional {1} from **Lodestone Golem**. This means that if you wish to cast the spell using **Delve**, you must exile enough cards to cover the total cost, which is the original cost plus the Golem's tax.
+
+### 3. The Ruling
+You may exile cards to pay for the generic mana cost of the non-artifact spell with **Delve**, but you must still account for the additional {1} cost imposed by **Lodestone Golem**.
+
+### Sources
+[[Lodestone Golem]], [Rule 118.12 (Cost Calculation)]  
+[[Delve]], [Rule 702.66a (Delve)]"
+89,Medium,Costs,"If I cast [[Ancestral Vision]] from my hand, do I have to pay {0}?",Ancestral Vision has no mana cost (it is unpayable). You cannot cast it normally from your hand; you must use its Suspend ability or an effect that lets you cast it without paying its mana cost.,9,Costs & X Spells,"Ah, a question regarding the nuances of casting spells with alternative costs! Let us delve into the intricacies of this matter.
+
+### 1. The Interaction
+The card in question is **Ancestral Vision**, which has a suspend cost of {U} and a mana cost of {0}. You are asking whether you must pay {0} if you attempt to cast it from your hand.
+
+### 2. The Logic (Step-by-Step)
+- **Understanding the Mana Cost**: Ancestral Vision has a mana cost of {0}. This means that if you were to cast it normally, you would indeed be required to pay {0} as part of the casting process.
+- **Casting from Hand**: However, Ancestral Vision is unique in that it has a suspend ability. If you choose to cast it using suspend, you pay the suspend cost of {U} and exile it with four time counters. The card is not cast from your hand in the traditional sense; rather, it is exiled and will be cast later when the last time counter is removed.
+- **Rule on Casting with {X}**: If you were to cast Ancestral Vision without paying its mana cost (as it would be when the last time counter is removed), the rules dictate that you must treat the {X} in its mana cost as 0. However, this does not apply when casting it directly from your hand, as you are not casting it without paying its mana cost in that scenario.
+
+Crucially, if you attempt to cast Ancestral Vision directly from your hand, you must indeed pay {0} as part of the casting process, even though it may seem trivial.
+
+### 3. The Ruling
+Yes, if you cast **Ancestral Vision** from your hand, you must pay {0}.
+
+### Sources
+[[Ancestral Vision]], [Rule 601.2h (Total Cost)]"
+90,Hard,Costs,"If I have [[Jet Medallion]] (black spells cost {1} less) and I cast a black spell with X in its cost, does the reduction apply to X?","Yes. You first choose the value for X, calculate the total cost, and then apply reductions. The Medallion will reduce the total amount of generic mana you have to pay by {1}.",9,Costs & X Spells,"Ah, a most intriguing inquiry regarding the nuances of cost reduction and the variable X in spell casting! 
+
+### 1. The Interaction
+The key cards in this scenario are Jet Medallion, which reduces the cost of black spells by {1}, and a black spell that includes {X} in its mana cost. The mechanical conflict arises from how cost reductions interact with the variable X.
+
+### 2. The Logic (Step-by-Step)
+- When you cast a spell with {X} in its mana cost, you must choose a value for X before calculating the total cost of the spell. This is a fundamental principle of casting spells (Rule 107.3b).
+- Jet Medallion specifically reduces the generic mana component of black spells by {1}. However, it does not affect the colored mana component or the value of X itself (Rule 118.7a).
+- If you are casting a black spell with {X} in its cost, the reduction from Jet Medallion applies only to the total cost after you have chosen a value for X. Thus, if you choose X = 2, the total cost would be the mana cost of the spell minus {1} (from Jet Medallion), resulting in a total cost of {X - 1} + any other components.
+- Importantly, if an effect were to allow you to cast the spell without paying its mana cost or an alternative cost that includes X, the only legal choice for X would be 0 (Rule 107.3b). However, since Jet Medallion merely reduces costs rather than negating them, this does not apply here.
+
+### 3. The Ruling
+The reduction from Jet Medallion does not apply to the value of X itself; it only reduces the total cost of the spell after X has been determined.
+
+### Sources
+[[Jet Medallion]], [Rule 107.3b (X in Mana Cost)]  
+[[Jet Medallion]], [Rule 118.7a (Cost Reduction Effects)]"
+91,Hard,Layers,I control [[Humility]] and my opponent plays [[Opalescence]]. What is the power and toughness of other non-aura enchantments?,"This is a Layer 7b interaction. Both effects apply in the same sublayer. They are applied in timestamp order. If Humility entered the battlefield last, all other non-aura enchantments are 1/1 creatures. If Opalescence entered last, their P/T is equal to their mana value.",10,Elite Interactions (Pro Level),"Ah, the intricate dance of enchantments and their interactions! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+You control **Humility**, which causes all creatures to lose their abilities and sets their power and toughness to 1/1. Your opponent plays **Opalescence**, which animates all other non-Aura enchantments, giving them base power and toughness equal to their mana value.
+
+### 2. The Logic (Step-by-Step)
+- **Layer 4 (Type-Changing)**: When **Opalescence** enters the battlefield, it applies its effect first. All non-Aura enchantments, including **Humility**, become creatures with base power and toughness equal to their mana value. Since **Humility** has a mana value of 2, it becomes a 2/2 creature at this stage.
+  
+- **Layer 6 (Ability Removal)**: Next, **Humility** applies its effect. It causes all creatures to lose all abilities and sets their power and toughness to 1/1. This includes the newly animated **Humility** itself, which now becomes a 1/1 creature with no abilities.
+
+- **Layer 7b (Power/Toughness Adjustment)**: Since **Humility** has the latest timestamp, it will apply its power and toughness setting last. Therefore, all creatures, including the animated **Opalescence** and any other non-Aura enchantments, will also become 1/1 creatures with no abilities.
+
+Crucially, observe that while **Opalescence** animated **Humility**, it did not retain its power and toughness as a 2/2 due to the effect of **Humility** overriding it.
+
+### 3. The Ruling
+All other non-Aura enchantments become 1/1 creatures with no abilities.
+
+### Sources
+[[Humility]], [Rule 613 (Layering)]  
+[[Opalescence]], [Rule 613 (Layering)]"
+92,Hard,Dependencies,"I have [[Blood Moon]] and my opponent has [[Urborg, Tomb of Yawgmoth]] in play. Are lands Swamps?","No. There is a dependency in Layer 4. Blood Moon's effect changes Urborg's type to Mountain, which removes its ability to make lands Swamps. Therefore, Urborg's effect is never applied, and lands remain their basic types or Mountains.",10,Elite Interactions (Pro Level),"Ah, the intricate dance of land types and abilities! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+We have two key cards: **Blood Moon**, which transforms nonbasic lands into Mountains, and **Urborg, Tomb of Yawgmoth**, which grants all lands the subtype Swamp in addition to their other types. The conflict arises from the interaction of these two effects.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Blood Moon's Effect**: When Blood Moon enters the battlefield, it applies its effect to all nonbasic lands, including Urborg. This effect changes Urborg into a Mountain, removing its abilities and other land types in Layer 4. Thus, Urborg loses its ability to grant the Swamp subtype to other lands.
+  
+- **Step 2: Urborg's Effect**: Urborg's ability, which grants the Swamp subtype to all lands, is now rendered ineffective because it has been transformed into a Mountain. However, it is crucial to note that while Urborg is a Mountain, it does not cease to exist; it simply loses its ability to grant the Swamp subtype to other lands.
+
+- **Step 3: Layer Interaction**: According to the rules, when Blood Moon applies its effect, it does so in Layer 4, which means it wipes Urborg's abilities. Since Urborg is no longer able to grant the Swamp subtype, no other lands on the battlefield will gain that subtype either.
+
+- **Conclusion**: Therefore, while Urborg itself is a Mountain, it does not confer the Swamp subtype to any other lands. Thus, no lands are Swamps under the current conditions.
+
+### 3. The Ruling
+Lands are not Swamps while Blood Moon is in play, as Urborg, Tomb of Yawgmoth has lost its ability to grant the Swamp subtype to other lands.
+
+### Sources
+[[Blood Moon]], [Rule 613.6 (Layers & Ability Retention)]; [[Urborg, Tomb of Yawgmoth]], [Rule 613.6 (Layers & Ability Retention)]."
+93,Hard,Continuous Effects,"If I cast [[Dress Down]] during my opponent's end step, when does it get sacrificed?","It will be sacrificed at the beginning of the next player's end step (your turn). Since 'at the beginning of the end step' triggers occur at the very start of that phase, casting it during the phase means the trigger for the current turn has already passed.",10,Elite Interactions (Pro Level),"Ah, the intricacies of timing and sacrifice mechanics in Magic: The Gathering! Let us delve into the matter at hand.
+
+### 1. The Interaction
+The key card in question is **Dress Down**, an enchantment that, upon entering the battlefield, causes creatures to lose all abilities and has a triggered ability that instructs its controller to sacrifice it at the beginning of the end step.
+
+### 2. The Logic (Step-by-Step)
+- **Casting Dress Down**: When you cast Dress Down during your opponent's end step, it resolves and enters the battlefield. At this moment, you draw a card due to its triggered ability.
+- **Triggered Ability**: Dress Down has a triggered ability that states it will be sacrificed at the beginning of the end step. This ability is placed on the stack and will resolve at the appropriate time.
+- **End Step Timing**: The end step is a specific phase in the turn structure. When your opponent's end step begins, the game will check for any triggered abilities that need to resolve.
+- **Sacrifice Condition**: The ability to sacrifice Dress Down will resolve at the beginning of the end step, which means it will be sacrificed immediately as that step begins, before any other actions can occur in that step.
+
+Crucially, the sacrifice occurs at the very start of the end step, not at the end of it. Thus, Dress Down will not remain on the battlefield for any duration beyond that point.
+
+### 3. The Ruling
+Dress Down will be sacrificed at the beginning of the end step during which it was cast.
+
+### Sources
+[[Dress Down]], [Rule 304.2 (Resolving Spells)]"
+94,Hard,Axioms / Sagas,"If I use [[Power Terrace]] to give my [[Urza's Saga]] +1/+1 (making it a creature) and then I play [[Blood Moon]], is it still a creature?","No. Blood Moon turns the land into a Mountain in Layer 4 and it loses all abilities. Since the effect making it a creature was tied to it being a Saga/Enchantment with specific abilities that are now gone, it ceases to be a creature and becomes a non-basic Mountain.",10,Elite Interactions (Pro Level),"Ah, the intricate dance of enchantments and sagas! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in this scenario are **Urza's Saga**, which is an enchantment land that can become a creature, and **Blood Moon**, which transforms nonbasic lands into Mountains, stripping them of their abilities.
+
+### 2. The Logic (Step-by-Step)
+1. **Initial State**: When you activate **Power Terrace**, it grants **Urza's Saga** a +1/+1, thus making it a creature. At this point, it retains its status as both a land and a creature.
+   
+2. **Layer Application**: When **Blood Moon** is played, it applies a Layer 4 effect, changing all nonbasic lands into Mountains. This effect removes all printed abilities from **Urza's Saga**, including its chapter abilities. However, it is crucial to note that **Urza's Saga** has already gained the ability to tap for colorless mana and create tokens from its first and second chapters, respectively.
+
+3. **Ability Retention**: According to the rules, while **Blood Moon** changes **Urza's Saga** into a Mountain (Layer 4), it does not remove the abilities that **Urza's Saga** has already gained from its chapters (Layer 6). Thus, it retains the abilities to tap for {C} and create a token.
+
+4. **Creature Status**: The transformation into a Mountain does not inherently remove its creature status. The creature status is independent of the abilities it possesses. Therefore, even though it has lost its chapter abilities, it remains a creature due to the effect of **Power Terrace**.
+
+### 3. The Ruling
+Thus, **Urza's Saga** remains a creature even after **Blood Moon** is played, retaining its creature status while becoming a Mountain.
+
+### Sources
+[[Urza's Saga]], [Rule 613 (Layering)]  
+[[Blood Moon]], [Rule 613 (Layering)]  
+[[Power Terrace]], [Rule 208.3a (Creature Status)]"
+95,Hard,Replacement Effects,I have [[Doubling Season]] and I cast a creature with [[Sunburst]]. Are the counters doubled?,"Yes. Sunburst is a replacement effect that modifies how the permanent enters the battlefield ('enters with...'). Doubling Season interacts with any effect that places counters as a permanent enters, so it doubles the sunburst counters.",10,Elite Interactions (Pro Level),"Ah, the intricate dance of counters and enchantments! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in this scenario are **Doubling Season**, which doubles the number of tokens or counters created, and a creature with the **Sunburst** ability, which adds counters based on the colors of mana spent to cast it.
+
+### 2. The Logic (Step-by-Step)
+- When you cast a creature with **Sunburst**, it enters the battlefield and checks how many colors of mana were spent to cast it. For each color, it will enter with a corresponding counter (either a +1/+1 counter for creatures or a charge counter for noncreatures).
+- **Doubling Season** has a replacement effect that applies when counters are being placed on a permanent. According to the rules, if an effect would put one or more counters on a permanent you control, Doubling Season will double that number.
+- Crucially, the **Sunburst** ability is a static ability that functions as the creature enters the battlefield. Therefore, the counters are added before Doubling Season's effect is applied.
+- Thus, if you spent, say, three different colors of mana to cast the creature, it would normally enter with three counters. However, because of Doubling Season, it will enter with double that number, resulting in six counters.
+
+### 3. The Ruling
+Yes, the counters from the creature with Sunburst will indeed be doubled by Doubling Season.
+
+### Sources
+[[Doubling Season]], [Rule 701.10e (Doubling Counters)]  
+[[Sunburst]], [Rule 702.44 (Sunburst)]"
+96,Hard,Time-Travel / Teferi,"My opponent has [[Teferi, Time Raveler]]. I have a spell with [[Suspend]] that has its last counter removed during my upkeep. Can I cast it?","No. Suspend triggers during the upkeep and instructs you to cast the spell. However, Teferi's static ability restricts you to casting spells only when you could cast a sorcery (Main phase, empty stack). Since it is the upkeep, the spell remains in exile.",10,Elite Interactions (Pro Level),"Ah, the intricacies of timing and spellcasting! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in this scenario are **Teferi, Time Raveler** and a spell with **Suspend**. Teferi imposes restrictions on when your opponents can cast spells, while Suspend allows you to exile a card and cast it later without paying its mana cost.
+
+### 2. The Logic (Step-by-Step)
+- **Teferi's Effect**: Teferi's first ability restricts your opponents to casting spells only at times they could cast a sorcery. This means that during your turn, you cannot cast spells unless they are sorceries, unless you have some means to bypass this restriction.
+  
+- **Suspend Mechanics**: When the last time counter is removed from your suspended spell during your upkeep, the second triggered ability of Suspend activates, allowing you to cast the card without paying its mana cost. However, this ability does not ignore the restrictions imposed by Teferi.
+
+- **Timing Permissions**: Since Teferi is in play, you must consider whether you can cast the spell at that moment. The ability to cast the suspended spell is contingent upon the timing permissions dictated by Teferi. Since the spell is being cast during your upkeep, and Teferi restricts you to casting only sorceries, you must evaluate if the suspended spell is a sorcery.
+
+- **Conclusion**: If the suspended spell is not a sorcery, you cannot cast it due to Teferi's restriction. If it is a sorcery, you may cast it as the last time counter is removed, as it is now your opportunity to do so.
+
+### 3. The Ruling
+You can only cast the suspended spell if it is a sorcery; otherwise, you cannot cast it due to Teferi's restriction.
+
+### Sources
+[[Teferi, Time Raveler]], [Rule 116.2f (Casting Spells)]  
+[[Suspend]], [Rule 702.62a (Suspend)]"
+97,Hard,Triggers,"If I control [[Elesh Norn, Mother of Machines]] and my opponent's [[Ashen Rider]] dies, does its ability trigger twice?","No. Elesh Norn only doubles triggers that occur when a permanent ENTERS the battlefield. Ashen Rider's ability is a 'leaves the battlefield' (dies) trigger, so it only triggers once as normal.",10,Elite Interactions (Pro Level),"Ah, a most intriguing inquiry regarding the interaction of triggered abilities and the influence of Elesh Norn, Mother of Machines! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in this scenario are Elesh Norn, Mother of Machines, which has the ability to double triggered abilities, and Ashen Rider, whose ability triggers upon its death to exile a target permanent.
+
+### 2. The Logic (Step-by-Step)
+- When Ashen Rider dies, its ability triggers, which states: ""When this creature enters or dies, exile target permanent.""
+- According to Elesh Norn's first ability, if a permanent entering or leaving the battlefield causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time. 
+- However, it is crucial to note that Ashen Rider is controlled by your opponent. Elesh Norn's ability only affects triggered abilities of permanents you control. Therefore, while Ashen Rider's ability does indeed trigger when it dies, it does not benefit from Elesh Norn's doubling effect because it is not a triggered ability of a permanent you control.
+- Thus, Ashen Rider's ability will only trigger once, not twice.
+
+### 3. The Ruling
+Ashen Rider's ability triggers only once when it dies, as it is not a triggered ability of a permanent you control, and therefore does not benefit from Elesh Norn's effect.
+
+### Sources
+[[Elesh Norn, Mother of Machines]], [Rule 603.2c (Triggered Abilities)]  
+[[Ashen Rider]], [Rule 603.2c (Triggered Abilities)]"
+98,Hard,Control,"If I use [[Sudden Substitution]] to swap a creature I control for an opponent's spell, and that spell has [[Storm]], who gets the Storm copies?","The opponent (the original caster) still controls the Storm trigger. Storm triggers when the spell is cast. Even if you gain control of the original spell, the trigger on the stack is still controlled by the player who cast it, and they will get the copies.",10,Elite Interactions (Pro Level),"Ah, a most intriguing inquiry regarding the interaction of Sudden Substitution and the Storm mechanic! Let us delve into the mechanics at play here.
+
+### 1. The Interaction
+The key cards in this scenario are Sudden Substitution, which allows you to exchange control of a target noncreature spell and a target creature, and a spell that has the Storm ability. The crux of the matter lies in determining who controls the Storm copies generated by the spell after the exchange.
+
+### 2. The Logic (Step-by-Step)
+- **Step 1: Casting Sudden Substitution**: When you cast Sudden Substitution, it resolves with split second, meaning no other spells or abilities can be activated until it resolves.
+  
+- **Step 2: Exchange Control**: Upon resolution, you exchange control of the target creature you control with the opponent's noncreature spell that has Storm. Importantly, the spell remains on the stack under the opponent's control, but you now control the creature.
+
+- **Step 3: Storm Trigger**: When the spell with Storm resolves, it triggers the Storm ability. According to the rules, Storm creates copies of the spell for each other spell cast before it this turn. Crucially, the Storm ability is a triggered ability that functions independently of its source once it is placed on the stack (Rule 113.7a).
+
+- **Step 4: Control of Copies**: Since the original spell is still controlled by your opponent, they will control the Storm copies generated by that spell. The exchange of control via Sudden Substitution does not affect the control of the spell itself or its copies; it only affects the creature you swapped.
+
+### 3. The Ruling
+Thus, the opponent will control the Storm copies generated by the spell, as the original spell remains under their control despite the exchange.
+
+### Sources
+[[Sudden Substitution]], [Rule 113.7a (The Stack)]  
+[[Storm]], [Rule 702.40a (Storm)]"
+99,Hard,Layers / Copy,"I have a [[Magus of the Moon]] that is being affected by [[Lignify]]. If I copy it with [[Clone]], what is the Clone?","The Clone is a full [[Magus of the Moon]]. It will have the ability 'Nonbasic lands are Mountains'. Lignify's effect (making it a 0/4 Treefolk) is a continuous effect applied in Layer 6, which is not part of the card's copyable values.",10,Elite Interactions (Pro Level),"Ah, the intricacies of copying and enchantments! Let us delve into this fascinating interaction.
+
+### 1. The Interaction
+We have a Magus of the Moon enchanted by Lignify, and you wish to copy it with Clone. The key elements here are the effects of Lignify, which removes abilities, and the nature of Clone, which copies the characteristics of the target.
+
+### 2. The Logic (Step-by-Step)
+1. **Lignify's Effect**: When Lignify enchants Magus of the Moon, it changes its type to a Treefolk with base power and toughness of 0/4 and removes all of its abilities. Thus, Magus of the Moon, which normally turns nonbasic lands into Mountains, loses this ability due to Lignify's effect (Layer 4).
+
+2. **Copying with Clone**: When Clone enters the battlefield as a copy of Magus of the Moon, it will copy the characteristics of the Magus at that moment. According to the rules, Clone copies the printed characteristics of the original creature, which, in this case, is now a Treefolk with 0/4 stats and no abilities due to Lignify.
+
+3. **Independence of Abilities**: Importantly, Clone does not retain any abilities from the original Magus of the Moon because it is copying the state of the Magus after Lignify has applied its effects. Therefore, the Clone will also enter as a 0/0 Treefolk with no abilities.
+
+4. **Final Characteristics**: Since Clone copies the characteristics of Magus of the Moon as it currently exists (which is a 0/4 Treefolk with no abilities), it will not gain the ability to turn nonbasic lands into Mountains.
+
+### 3. The Ruling
+The Clone enters the battlefield as a 0/4 Treefolk with no abilities, reflecting the state of Magus of the Moon after being affected by Lignify.
+
+### Sources
+[[Magus of the Moon]], [Rule 613 (Layering)]  
+[[Lignify]], [Rule 613 (Layering)]  
+[[Clone]], [Rule 707.2 (Copying Objects)]"
+100,Hard,Winning the Game,I have [[Abyssal Persecutor]] and my opponent is at -10 life. I cast [[Fractured Identity]] on my Persecutor. Who wins?,"The game continues. Each of your opponents receives a copy of Abyssal Persecutor. Since YOU are now the only player who doesn't control one, you are the only one who 'can't win', while your opponents 'can't lose' due to the copies they now control.",10,Elite Interactions (Pro Level),"Ah, the intricacies of game state and the nuances of card interactions! Let us delve into this fascinating scenario.
+
+### 1. The Interaction
+We have two key cards at play: **Abyssal Persecutor**, which prevents you from winning and your opponents from losing, and **Fractured Identity**, which exiles a nonland permanent and creates token copies of it for each player other than its controller.
+
+### 2. The Logic (Step-by-Step)
+1. **Casting Fractured Identity**: When you cast **Fractured Identity** targeting **Abyssal Persecutor**, it will exile the Persecutor and create token copies of it for each opponent. 
+   
+2. **Exiling Abyssal Persecutor**: Upon resolution, **Abyssal Persecutor** is exiled. At this moment, your opponent is at -10 life. However, due to the effect of **Abyssal Persecutor**, they cannot lose the game while it is on the battlefield.
+
+3. **Token Creation**: The tokens created by **Fractured Identity** will copy the characteristics of **Abyssal Persecutor** as it was printed, which includes the text stating that opponents cannot lose the game. Importantly, these tokens do not retain the original's state-based actions or effects that were in play before exile.
+
+4. **State-Based Actions**: After the tokens enter the battlefield, your opponent still has a life total of -10. However, since **Abyssal Persecutor** has left the battlefield, the effect preventing them from losing the game is no longer in effect. Thus, state-based actions will check their life total, and they will lose the game as a result of having 0 or less life.
+
+### 3. The Ruling
+Your opponent loses the game as a state-based action after **Abyssal Persecutor** is exiled by **Fractured Identity**, despite the presence of the token copies.
+
+### Sources
+[[Abyssal Persecutor]], [Rule 704.5x (State-Based Actions)]  
+[[Fractured Identity]], [Rule 704.5x (State-Based Actions)]"
