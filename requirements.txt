@@ -15,7 +15,7 @@ llama-index-embeddings-openai
 # User Interface
 gradio
 
-ipykernel
-
 # Data Visualization
 plotly
+
+ipykernel
