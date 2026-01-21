@@ -28,4 +28,3 @@ services:
     # 2. Avoids rebuilding the index if it already exists
     volumes:
       - ./data:/app/data
-

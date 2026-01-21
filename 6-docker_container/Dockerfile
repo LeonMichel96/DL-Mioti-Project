@@ -32,4 +32,3 @@ EXPOSE 7860
 
 # 8. Entrypoint
 CMD ["python", "app.py"]
-
