@@ -121,19 +121,22 @@ CASE_LAW_DOCS = [
     ),
     Document(
         text="""
-        *** LEGAL PRINCIPLE: THE XEROX RULE & ANIMATION (AXIOM 5) ***
-        **The Rule**: Copy effects (Rule 706.2) acquire ONLY the original card's *printed* text (Name, Cost, Traits).
+        *** LEGAL PRINCIPLE: XEROX RULE, ANIMATION & CONTROL (AXIOM 5) ***
+        **1. The Xerox Rule**: Copy effects (Rule 706.2) acquire ONLY the original card's *printed* text (Name, Cost, Traits).
         **Exclusions**: Copies ignore Status (tapped), Counters, Auras, and **Temporary Effects**.
 
-        **The Animation Trap**: If you copy a permanent that is temporarily a creature (e.g., an activated Mutavault, Gideon, or Vehicle), the copy is the **PRINTED CARD**.
+        **2. The Animation Trap**: If you copy a permanent that is temporarily a creature (e.g., an activated Mutavault, Gideon, or Vehicle), the copy is the **PRINTED CARD**.
         *Precedent*: **Phantasmal Image** copying an activated **Mutavault**.
         *Verdict*: The Image becomes a **LAND** (the printed card). It is **NOT** a creature. It cannot attack or block. It does not trigger "Creature enters" effects.
 
-        **Cast vs Copy**: Copying a permanent is NOT Casting. Creating a copy on the stack is NOT Casting.
+        **3. Cast vs Copy**: Copying a permanent is NOT Casting. Creating a copy on the stack is NOT Casting.
         *Precedent*: **Sculpting Steel** copying **Cityscape Leveler** does NOT trigger "When you cast this spell".
         *Precedent*: Replicating **Shattering Spree** does NOT trigger Prowess for the copies.
+
+        **4. Continuous Control Effects (The Treachery Rule)**: Control-changing effects apply **simultaneously** with the permanent entering the battlefield. There is NO moment where the opponent controls it on the battlefield.
+        *Precedent*: You cast **Treachery** on opponent's **Eidolon of Blossoms**. When Treachery enters, you gain control of Eidolon *immediately*. The game then checks for triggers. Since you control Eidolon, its "Constellation" trigger fires for **YOU**.
         """,
-        metadata={"topic": "copy_clone_mutavault_animation"}
+        metadata={"topic": "copy_clone_mutavault_animation_control"}
     ),
     Document(
         text="""
@@ -169,8 +172,11 @@ CASE_LAW_DOCS = [
         - **Plot Ownership**: If you cast opponent's card (Gonti) and Plot it (Aven Interrupter), the **OWNER** gets to cast it later.
         
         **5. Sideboard**: The Sideboard is a **Hidden Zone** outside the game. You **cannot** look at it during a game unless an effect (Wish) specifically allows it.
+
+        **6. Static Ability Scope**: Static abilities on permanents (e.g. "Permanents you control are Artifacts") apply ONLY to objects on the **Battlefield**. They do NOT affect cards in the Sideboard ("Outside the Game").
+        *Precedent*: **Encroaching Mycosynth** turns your board into artifacts. It does **NOT** turn cards in your Sideboard into artifacts. **Karn, the Great Creator** cannot fetch a non-artifact card from the sideboard.
         """,
-        metadata={"topic": "zones_sba_flicker_facedown_nexus"}
+        metadata={"topic": "zones_sba_flicker_facedown_nexus_scope"}
     ),
     Document(
         text="""
@@ -205,8 +211,11 @@ CASE_LAW_DOCS = [
         
         **5. Processor Success**: Moving a card from Exile to GY is a "Cost". If a replacement effect (Rest in Peace) moves it back, the cost is still PAID.
         *Precedent*: **Oracle of Dust** works under **Rest in Peace**.
+
+        **6. The Impossibility of Payment**: You cannot pay a cost unless you have the requisite resources.
+        *Precedent (Bolas's Citadel + Platinum Angel)*: **Platinum Angel** prevents you from losing the game, but it does NOT grant you "infinite life" to spend. If you are at 5 life, you **CANNOT** pay 6 life to cast a spell. The payment is illegal because you do not have the resources.
         """,
-        metadata={"topic": "costs_equip_redirect_mariner_processor"}
+        metadata={"topic": "costs_equip_redirect_mariner_processor_limits"}
     )
 ]
 
@@ -496,11 +505,11 @@ class MagicJudgeEngine:
                         self.lower_card_map[p.lower()] = name
 
         # --- STOPWORDS FOR N-GRAM SCANNER ---
-        # These are valid card names (mostly split halves) that are also common English words.
-        # The Semantic Scanner will IGNORE these if they appear as single words in the text.
-        # To fetch these specific cards, the user MUST use brackets (e.g., [[Turn]]).
+        # Words that are valid card names (or nicknames) but are too common in English 
+        # to assume they are card references without brackets.
         self.common_false_positives = {
-            "turn", "burn", "life", "death", "hit", "run", "stand", "deliver",
+            # Verbs / Common Words
+            "will", "turn", "burn", "life", "death", "hit", "run", "stand", "deliver",
             "fire", "ice", "order", "chaos", "give", "take", "wear", "tear",
             "catch", "release", "flesh", "blood", "armed", "dangerous", "fast", "furious",
             "boom", "bust", "rough", "tumble", "down", "dirty", "cut", "ribbons",
@@ -508,14 +517,24 @@ class MagicJudgeEngine:
             "refuse", "cooperate", "drive", "work", "start", "finish", "fight", 
             "return", "away", "gone", "dead", "alive", "spring", "mind", "dust",
             "dawn", "dusk", "profit", "loss", "supply", "demand", "assault", "battery",
-            "wax", "wane", "spite", "malice", "pain", "suffering", "rhythm"
+            "wax", "wane", "spite", "malice", "pain", "suffering", "rhythm", "collision", "colossus",
+            "response", "resurgence", "alive", "well", "done", "said", "ready", "willing",
+            "failure", "comply", "appeal", "authority", "reason", "believe", "consign", "oblivion",
+            "worth", "grand", "blind", "change", "shape", "make", "break", "beck", "call",
+            
+            # Keywords that are also Card Names (prevent "I have Vigilance" -> finding the card "Vigilance")
+            "vigilance", "lifelink", "trample", "haste", "flying", "deathtouch", "reach",
+            "hexproof", "shroud", "indestructible", "protection", "flash", "defender",
+            "scry", "fateseal", "clash", "support", "populate", "proliferate",
+            
+            # Partial Name Conflicts (e.g. "Rose" matches "Rose, Cutthroat Raider")
+            "rose", "thalia", "karn", "liliana", "chandra", "jace", "nissa", "ajani", "teferi"
         }
 
     def _extract_cards(self, text: str) -> List[str]:
         found_cards = set()
         
         # 1. Explicit Tags [[Name]] (High Priority - Ignores Stopwords)
-        # If user types [[Turn]], they definitely mean the card "Turn // Burn".
         explicit_raw = re.findall(r"\[\[(.*?)\]\]", text)
         for raw in explicit_raw:
             clean = raw.strip().lower()
@@ -527,10 +546,9 @@ class MagicJudgeEngine:
                 if short_clean in self.lower_card_map:
                     found_cards.add(self.lower_card_map[short_clean])
                 else:
-                    found_cards.add(raw) # Keep raw if lookup fails (might be a new/unlisted card)
+                    found_cards.add(raw) # Keep raw if lookup fails
 
         # 2. Semantic N-Gram Scan (Low Priority - Respects Stopwords)
-        # This finds "Turn Against" but ignores "Turn" (if in stopwords).
         clean_text = re.sub(r'[^\w\s\']', '', text).lower()
         words = clean_text.split()
         skip_indices = set()
@@ -543,12 +561,11 @@ class MagicJudgeEngine:
                 
                 if phrase in self.lower_card_map:
                     # FIX: Skip if it's a common word and NOT explicitly bracketed
-                    # Note: "Turn Against" is NOT in common_false_positives, so it passes.
                     if phrase in self.common_false_positives:
                         continue
                         
                     found_cards.add(self.lower_card_map[phrase])
-                    # Lock these words so we don't match sub-parts (e.g., locking "Turn Against" prevents matching "Turn")
+                    # Lock these words so we don't match sub-parts
                     for idx in range(i, i+n): skip_indices.add(idx)
         
         return list(found_cards)
@@ -572,9 +589,8 @@ class MagicJudgeEngine:
         search_query = self._contextualize_query(user_question, history)
         print(f"[LOG] Search Query: {search_query}")
         
-        # --- 1. ROBUST RETRIEVAL (Fixes the "Dropped Brackets" bug) ---
-        # Scan ORIGINAL question for explicit tags (before LLM strips them)
-        # AND scan the rewritten query for context context.
+        # --- 1. ROBUST RETRIEVAL ---
+        # Scan ORIGINAL question for explicit tags AND rewritten query for context
         cards_from_user = self._extract_cards(user_question)
         cards_from_rewrite = self._extract_cards(search_query)
         target_cards = list(set(cards_from_user + cards_from_rewrite))
@@ -633,7 +649,7 @@ class MagicJudgeEngine:
         if not is_off_topic:
             context_text = "--- RETRIEVED CARDS ---\n" + "\n".join([n.text for n in final_nodes if "card_name" in n.metadata])
             
-            # Inject Rule Titles for better citations
+            # Inject Rule Titles
             rule_texts = []
             for n in final_nodes:
                 if "rule_id" in n.metadata:
