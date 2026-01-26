@@ -173,8 +173,11 @@ CASE_LAW_DOCS = [
         
         **5. Sideboard**: The Sideboard is a **Hidden Zone** outside the game. You **cannot** look at it during a game unless an effect (Wish) specifically allows it.
 
-        **6. Static Ability Scope**: Static abilities on permanents (e.g. "Permanents you control are Artifacts") apply ONLY to objects on the **Battlefield**. They do NOT affect cards in the Sideboard ("Outside the Game").
-        *Precedent*: **Encroaching Mycosynth** turns your board into artifacts. It does **NOT** turn cards in your Sideboard into artifacts. **Karn, the Great Creator** cannot fetch a non-artifact card from the sideboard.
+        **6. Static Ability Scope**: 
+        - **Permanents vs. Cards**: If an ability affects 'Permanents', it refers **ONLY** to objects on the Battlefield (Rule 110.1). 
+        - **Internal Zones**: If an ability affects 'Permanent cards you own that aren't on the battlefield', it refers **ONLY** to internal Game Zones (Hand, Graveyard, Library, Exile, Stack, and Command Zone). 
+        - **The Sideboard Barrier**: The Sideboard is 'Outside the Game' and is **NOT** a game zone. Static abilities on the battlefield never affect cards 'Outside the Game' unless the effect specifically mentions that zone (which is extremely rare).
+        *Precedent*: **Encroaching Mycosynth** makes permanents on the board and cards in your hand/graveyard artifacts, but it cannot reach into the Sideboard. **Karn, the Great Creator** can only fetch cards from the sideboard that are naturally artifacts; he cannot 'see' the Mycosynth effect on cards outside the game.
         """,
         metadata={"topic": "zones_sba_flicker_facedown_nexus_scope"}
     ),
@@ -508,6 +511,9 @@ class MagicJudgeEngine:
         # Words that are valid card names (or nicknames) but are too common in English 
         # to assume they are card references without brackets.
         self.common_false_positives = {
+            # Pronouns & Extremely Common Small Words
+            "me", "i", "you", "he", "she", "they", "it", "my", "your", "his", "her",
+            
             # Verbs / Common Words
             "will", "turn", "burn", "life", "death", "hit", "run", "stand", "deliver",
             "fire", "ice", "order", "chaos", "give", "take", "wear", "tear",

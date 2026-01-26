@@ -1,0 +1,4 @@
+judgesfamiliar.me {
+    reverse_proxy judge-app:7860
+}
+

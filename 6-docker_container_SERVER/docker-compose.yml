@@ -1,0 +1,37 @@
+services:
+  judge-app:
+    build: .
+    image: judges-familiar:latest
+    container_name: judges-familiar
+    restart: unless-stopped
+    
+    # IMPORTANTE: Usamos 'expose' en lugar de 'ports'.
+    # Esto hace que el puerto 7860 sea visible para Caddy (red interna),
+    # pero NO accesible desde internet directamente. Seguridad total.
+    expose:
+      - "7860"
+    
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      # Caddy es el único que da la cara a internet (puertos web estándar)
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    # Caddy esperará a que el búho esté despierto para arrancar
+    depends_on:
+      - judge-app
+
+volumes:
+  caddy_data:
+  caddy_config:

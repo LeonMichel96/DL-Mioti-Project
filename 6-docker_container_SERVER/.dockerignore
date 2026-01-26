@@ -1,0 +1,33 @@
+# --- HEAVY DATA (CRITICAL) ---
+# We ignore data/ so it is NOT copied into the image.
+# We will mount this folder at runtime via docker-compose.
+data/
+
+# --- SECURITY ---
+# Never copy secrets into the image layer.
+.env
+.env.*
+
+# --- ORCHESTRATION ---
+# Don't copy the blueprints into the container itself
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# --- PYTHON ARTIFACTS ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+
+# --- VIRTUAL ENVS ---
+venv/
+.venv/
+env/
+
+# --- SYSTEM & GIT ---
+.DS_Store
+.git/
+.gitignore

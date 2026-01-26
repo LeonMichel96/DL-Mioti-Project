@@ -7,7 +7,8 @@ from engine import MagicJudgeEngine
 
 # --- 1. SETUP ---
 if not load_dotenv():
-    load_dotenv("../.env")
+    # load_dotenv("../.env")
+    pass
 
 print(f"Awakening the Owl...")
 
@@ -89,21 +90,46 @@ def bot_response(history):
 # --- 3. UI BUILDER ---
 
 custom_css = """
+/* ESTILOS GENERALES */
 .gradio-container { background-color: #020617 !important; }
 .prose, .markdown-text, p, span, label { color: #f8fafc !important; }
 a { color: #60a5fa !important; } 
+
+/* LOGO: Más grande y alineado a la izquierda */
 #logo_img {
-    display: block; margin-left: 20px; margin-top: 20px; width: 30%; max-width: 300px;
-    background-color: transparent !important; border: none !important;
+    display: block; 
+    margin-left: 10px; /* Pequeño margen izquierdo para no pegar al borde */
+    margin-top: 10px; 
+    width: auto;
+    max-width: 250px;
+    background-color: transparent !important; 
+    border: none !important;
 }
+
+/* Ocultar elementos innecesarios del contenedor de imagen */
 .image-container .upload-button, .image-container .clear-button { display: none !important; }
+
+/* CHATBOT */
 #chatbot {
-    background-color: #0f172a !important; border: 2px solid #3b82f6 !important;
-    border-radius: 8px; box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+    background-color: #0f172a !important; 
+    border: 2px solid #3b82f6 !important;
+    border-radius: 8px; 
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
 }
+
 .message.user { background-color: #1e40af !important; border: 1px solid #3b82f6 !important; color: white !important; }
 .message.bot { background-color: #1e293b !important; border: 1px solid #fbbf24 !important; color: #f1f5f9 !important; }
-textarea, input { background-color: #1e293b !important; color: white !important; border: 1px solid #475569 !important; }
+
+/* TEXTAREA: 4 Líneas Fijas + Scroll interno + Sin redimensión */
+textarea { 
+    background-color: #1e293b !important; 
+    color: white !important; 
+    border: 1px solid #475569 !important;
+    overflow-y: scroll !important;  
+    resize: none !important;        
+    font-size: 16px !important;
+}
+
 button.primary {
     background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%) !important;
     color: #fbbf24 !important; border: 1px solid #fbbf24 !important;
@@ -114,14 +140,27 @@ button.primary:hover { box-shadow: 0 0 15px rgba(251, 191, 36, 0.5); }
 
 theme = gr.themes.Base(primary_hue="blue", secondary_hue="amber", neutral_hue="slate")
 
-with gr.Blocks(title="Judge's Familiar") as app:
+with gr.Blocks(title="Judge's Familiar", fill_height=True) as app:
+    
     gr.Image(value="logo.png", elem_id="logo_img", show_label=False, container=False, interactive=False)
     
-    chatbot = gr.Chatbot(elem_id="chatbot", height=600)
+    chatbot = gr.Chatbot(elem_id="chatbot", scale=1)
     
     with gr.Row():
-        audio_input = gr.Audio(sources=["microphone"], type="filepath", show_label=False, container=False)
-        msg_box = gr.Textbox(scale=4, placeholder="Type your question here or record audio...", show_label=False, autofocus=True, container=False)
+        audio_input = gr.Audio(sources=["microphone"], type="filepath", show_label=False, container=False, scale=0)
+        
+        # CAMBIO SOLICITADO: 4 LÍNEAS FIJAS
+        # lines=4 y max_lines=4 aseguran altura constante.
+        msg_box = gr.Textbox(
+            scale=4, 
+            placeholder="Type your question here or record audio...", 
+            show_label=False, 
+            autofocus=False, 
+            container=False,
+            lines=4,     # Altura fija de 4 líneas
+            max_lines=4  # Tope duro de 4 líneas
+        )
+        
         send_btn = gr.Button("Ask the Owl", scale=1, variant="primary")
 
     clear_btn = gr.ClearButton([msg_box, chatbot, audio_input])

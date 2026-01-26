@@ -1,0 +1,102 @@
+DigitalOcean
+
+- Create Droplet. Amsterdam AMS3, Ubuntu 24.04 (LTS) x64.
+- Basic, Regular, 4GB / 2 CPUs, 80GB SSD Disk, 4TB transfer ($24/mo)
+- Password: 322824Familiar
+- Add improved metrics
+- Hostname: judges-familiar
+
+Inside a project, Move Resources and select judges-familiar droplet
+
+In terminal:
+
+ssh root@165.232.88.70
+
+yes
+
+Password: 322824Familiar
+
+####
+
+# 1. Actualizar la lista de paquetes e instalar Docker
+apt-get update && apt-get install -y docker.io docker-compose-v2 docker-buildx
+
+# 2. Arrancar Docker y asegurar que se inicie siempre
+systemctl start docker
+systemctl enable docker
+
+# 3. Comprobar que funciona (debería decir "Docker version...")
+docker --version
+
+####
+
+fallocate -l 2G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
+
+####
+
+Outside, in the Docker folder (6-docker_container):
+
+scp -r . root@165.232.88.70:/root/judges-familiar
+
+NOTE: Do not copy "data", or copy with just AtomicCards.json and magic_comprehensive_rules.txt inside (not the indexes)
+
+####
+
+In SERVER terminal
+
+cd judges-familiar
+docker compose up --build -d
+
+docker compose logs -f
+
+We should see the following line at the end:
+
+* Running on local URL: http://0.0.0.0:7860
+
+####
+
+In a browser, open:
+
+http://165.232.88.70:7860
+
+It mostly works, but connection is not secure and the microphone does not work.
+
+
+####
+
+Free judgesfamiliar.me domain in Namecheap
+
+Manage > Advanced DNS
+
+Trash all Records
+
+Add New Record:
+
+Type: A Record
+Host: @
+Value: 165.232.88.70
+TTL: Automatic
+
+Add New Record:
+
+Type: A Record
+Host: www
+Value: 165.232.88.70
+TTL: Automatic
+
+####
+
+Include the Caddyfile and updated docker-compose.yml file referencing Caddy.
+
+Run again
+
+docker compose up --build -d
+docker compose logs -f
+
+This should work now:
+
+https://judgesfamiliar.me

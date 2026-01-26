@@ -7,7 +7,7 @@ services:
     image: judges-familiar:latest
     
     # Name the running instance
-    container_name: judges_familiar
+    container_name: judges-familiar
     
     # Restart policy: Keeps the judge running unless you explicitly stop it
     restart: unless-stopped
